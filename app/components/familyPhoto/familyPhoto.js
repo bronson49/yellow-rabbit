@@ -1,6 +1,8 @@
+
 import jqueryUi from "jquery-ui";
 
 const familyPhotoFunc = function () {
+
     $('#family-slide').slider({
         value : 0,
         min : 0,

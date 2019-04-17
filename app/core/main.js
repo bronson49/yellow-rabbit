@@ -3,6 +3,6 @@ import {familyPhotoFunc} from "../components/familyPhoto/familyPhoto";
 
 $(document).ready(function () {
     borderWrapperFunc();
-  //  familyPhotoFunc();
+   // familyPhotoFunc();
 });
 
