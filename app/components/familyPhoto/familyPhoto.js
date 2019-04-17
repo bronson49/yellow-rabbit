@@ -1,4 +1,4 @@
-import jqueryui from "jquery-ui";
+import jqueryUi from "jquery-ui";
 
 const familyPhotoFunc = function () {
     $('#family-slide').slider({
