@@ -1,9 +1,10 @@
 .services {
   height: 100%;
   border-bottom: 2px solid #333333;
+  overflow: hidden;
 }
 .services-head{
-  padding: 35px;
+  padding: 35px 35px 0;
 
 }
 .services-head h2 {
@@ -15,7 +16,7 @@
 
 .services-list{
   display: flex;
-  margin: 75px 35px;
+  margin: 70px 35px;
 }
 .services-list-item{
   display: flex;
@@ -33,4 +34,10 @@
 }
 .services-item-text p {
   margin: 30px 0;
+}
+.services-img{
+
+}
+.services-img-item img{
+
 }
