@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#3d3d3e">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#3d3d3e">    <title>Yellow Rabbit</title>
+<link href="app.css" rel="stylesheet"></head>
+<body>
+
+    <div class="border-wrapper-top">
+        <img src="assets/images/logo.svg"
+             class="test"
+             alt="test"
+        ></div>
+    <div class="border-wrapper-right">
+        <ul class="social-icons">
+            <li>
+                <a href="">
+                    <img src="assets/images/Twitter Icon.svg"
+                         alt="image"
+                        >            </a>
+            </li>
+            <li><a href="">
+                <img src="assets/images/Linkedin Icon.svg"
+                     alt="image"
+                    >        </a></li>
+            <li>
+                <a href="">
+                    <img src="assets/images/Google Icon.svg"
+                         alt="image"
+                        >            </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="assets/images/Facebook Icon.svg"
+                         alt="image"
+                        >            </a>
+            </li>
+        </ul>
+    </div>
+    <div class="border-wrapper-bottom">
+        <div class="border-wrapper-call" id="makeCall">
+            <span>Заказать звонок</span>
+            <form action="" class="requestCall">
+                <input type="text" name="phone" placeholder="+380 xxx xx xx">
+                <label for="submitPhone" class="callArrow"><input type="submit" value=""  id="submitPhone"></label>
+            </form>
+        </div>
+        <div class="border-wrapper-photo border-wrapper-nonActive" id="makePhoto">
+            <span>Записаться на фотосессию</span>
+            <div class="border-wrapper-appointment">
+                <p>Записаться на сессию</p>
+                <form action="" name="appointment" class="appointment-form">
+                    <div class="appointment-form-left">
+                        <label for="name">
+                            Имя
+                            <input type="text" name="name" id="name">
+                        </label>
+                        <label for="phone">
+                            Телефон
+                            <input type="text" name="phone" id="phone">
+                        </label>
+                        <label for="mail">
+                            Почта
+                            <input type="text" name="mail" id="mail">
+                        </label>
+                    </div>
+                    <div class="appointment-form-right">
+                        <label for="messg">Комментарий</label>
+                        <textarea name="messg" id="messg" ></textarea>
+                    </div>
+                    <div class="appointment-form-submit">
+                        <input type="submit" name="submit">
+                    </div>
+                </form>
+                <div class="closePhoto"></div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="border-wrapper-left">
+        <div>
+            <a class="scrollUp">
+                <div class="scrollArrow"></div>
+                Вверх
+            </a>
+        </div>
+        <div>
+            <ul class="border-page-list">
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div>
+            <a class="scrollDown">
+                <div class="scrollArrow"></div>
+                Вниз
+            </a>
+        </div>
+    </div>    <main>
+        
+        <section class="container">
+            <div class="family-photo">
+                <div class="family-photo-head">
+                    <h2>семейная фотосессия</h2>
+                </div>
+                <div class="family-photo-slide">
+                    <ul class="family-photo-list">
+                        <li>
+                            <img src="assets/images/family.png"
+                                 alt="image"
+                                >                </li>
+                        <li>
+                            <img src="assets/images/family(1).png"
+                                 alt="image"
+                                >                </li>
+                        <li>
+                            <img src="assets/images/family(2).png"
+                                 alt="image"
+                                >                </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<script type="text/javascript" src="app.js"></script></body>
+</html>
