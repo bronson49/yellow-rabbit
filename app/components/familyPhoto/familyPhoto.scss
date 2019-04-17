@@ -3,7 +3,7 @@
 }
 .family-photo-head{
   display: flex;
-  padding: 60px 40px 25px;
+  padding: 70px 40px 25px;
   border-bottom: 2px solid #333333;
   height: 25%;
 }
@@ -15,14 +15,28 @@
 }
 .family-photo-slide{
   height: 75%;
-  display: flex;
+  overflow: hidden;
 }
 .family-photo-list {
   height: 100%;
+  display: flex;
+  transform: translateX(0px);
+  transition: .4s;
 }
 .family-photo-list li{
-  margin: 30px;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
 }
 .family-photo-list img {
   height: 100%;
+  padding: 30px ;
+}
+
+@media all and (max-width: 1700px){
+  .family-photo-head h2 {
+    font-size: 50px;
+  }
+  .family-photo-head{
+    padding: 40px 30px 25px;
+  }
 }
