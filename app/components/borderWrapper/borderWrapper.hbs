@@ -1,0 +1,85 @@
+<div class="border-wrapper-top">
+    {{> image src='logo.svg' class='test' alt='test' }}
+</div>
+<div class="border-wrapper-right">
+    <ul class="social-icons">
+        <li>
+            <a href="">
+                {{> image src='Twitter Icon.svg'}}
+            </a>
+        </li>
+        <li><a href="">
+            {{> image src='Linkedin Icon.svg'}}
+        </a></li>
+        <li>
+            <a href="">
+                {{> image src='Google Icon.svg'}}
+            </a>
+        </li>
+        <li>
+            <a href="">
+                {{> image src='Facebook Icon.svg'}}
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="border-wrapper-bottom">
+    <div class="border-wrapper-call" id="makeCall">
+        <span>Заказать звонок</span>
+        <form action="" class="requestCall">
+            <input type="text" name="phone" placeholder="+380 xxx xx xx">
+            <label for="submitPhone" class="callArrow"><input type="submit" value=""  id="submitPhone"></label>
+        </form>
+    </div>
+    <div class="border-wrapper-photo border-wrapper-nonActive" id="makePhoto">
+        <span>Записаться на фотосессию</span>
+        <div class="border-wrapper-appointment">
+            <p>Записаться на сессию</p>
+            <form action="" name="appointment" class="appointment-form">
+                <div class="appointment-form-left">
+                    <label for="name">
+                        Имя
+                        <input type="text" name="name" id="name">
+                    </label>
+                    <label for="phone">
+                        Телефон
+                        <input type="text" name="phone" id="phone">
+                    </label>
+                    <label for="mail">
+                        Почта
+                        <input type="text" name="mail" id="mail">
+                    </label>
+                </div>
+                <div class="appointment-form-right">
+                    <label for="messg">Комментарий</label>
+                    <textarea name="messg" id="messg" ></textarea>
+                </div>
+                <div class="appointment-form-submit">
+                    <input type="submit" name="submit">
+                </div>
+            </form>
+            <div class="closePhoto"></div>
+        </div>
+
+    </div>
+</div>
+<div class="border-wrapper-left">
+    <div>
+        <a class="scrollUp">
+            <div class="scrollArrow"></div>
+            Вверх
+        </a>
+    </div>
+    <div>
+        <ul class="border-page-list">
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div>
+        <a class="scrollDown">
+            <div class="scrollArrow"></div>
+            Вниз
+        </a>
+    </div>
+</div>

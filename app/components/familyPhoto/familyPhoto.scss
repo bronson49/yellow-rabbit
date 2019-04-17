@@ -1,0 +1,28 @@
+.family-photo{
+  height: 100%;
+}
+.family-photo-head{
+  display: flex;
+  padding: 60px 40px 25px;
+  border-bottom: 2px solid #333333;
+  height: 25%;
+}
+.family-photo-head h2 {
+  font-size: 70px;
+  letter-spacing: 3px;
+  font-family: Montserrat-Extra-Bold, sans-serif;
+  text-transform: uppercase;
+}
+.family-photo-slide{
+  height: 75%;
+  display: flex;
+}
+.family-photo-list {
+  height: 100%;
+}
+.family-photo-list li{
+  margin: 30px;
+}
+.family-photo-list img {
+  height: 100%;
+}

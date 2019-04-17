@@ -1,0 +1,332 @@
+.border-wrapper{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.border-wrapper-top {
+  position: fixed;
+  top: 0;
+  background: #F4F4F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 180px);
+  padding: 16px;
+  margin: 0 90px;
+  border-bottom: 2px solid #333333;
+}
+.border-wrapper-right{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 90px;
+  z-index: 10;
+  height: calc(100% - 130px);
+  margin: 65px 0;
+  border-left: 2px solid #333333;
+}
+.social-icons{
+  position: absolute;
+  bottom: -50px;
+}
+.social-icons li {
+  margin: 15px 20px;
+}
+
+
+
+.border-wrapper-bottom{
+  position: fixed;
+  bottom: 0;
+  background: #F4F4F4;
+  display: flex;
+  font-size: 18px;
+  width: calc(100% - 176px);
+  margin: 0 88px;
+  /*border-top: 2px solid #333333;*/
+}
+.border-wrapper-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 65px;
+  font-weight: 600;
+  border: 2px solid #141201;
+  transition: .4s;
+}
+.border-wrapper-photo{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 65px;
+  font-weight: 600;
+  border: 2px solid #141201;
+  transition: .4s;
+}
+.border-wrapper-nonActive{
+  background: #141201;
+  color: white;
+}
+
+
+.border-wrapper-left{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 90px;
+  height: calc(100% - 130px);
+  margin: 65px 0;
+  border-right: 2px solid #333333;
+}
+.border-wrapper-left > div {
+  transform: rotate(-90deg);
+}
+
+
+.requestCall {
+  margin: 0 50px;
+  max-width: 0;
+  overflow: hidden;
+  transition: 1s;
+  display: flex;
+}
+.requestCall input[name="phone"]{
+  border: 2px solid #141201;
+  width: 300px;
+  font-size: 14px;
+  padding:0 10px;
+  margin: 5px 60px;
+  background: #F4F4F4;
+  font-family: Montserrat-Regular, sans-serif;
+}
+#submitPhone{
+  display: none;
+}
+.border-wrapper-call:hover .requestCall {
+  max-width: 900px;
+}
+.callArrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #FED731;
+  position: relative;
+  cursor: pointer;
+}
+.callArrow:before {
+  position: absolute;
+  content: '';
+  width: 65px;
+  height: 2px;
+  top: 50%;
+  background: black;
+  right: 10px;
+}
+.callArrow:after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 20px;
+  right: 10px;
+  border-bottom:  2px solid #141201;
+  border-right:  2px solid #141201;
+  transform: rotate(-45deg);
+}
+
+.scrollDown, .scrollUp {
+  position: relative;
+  cursor: pointer;
+}
+.scrollArrow {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: #FED731;
+  left: 170%;
+  top: -100%;
+}
+.scrollArrow:before {
+  position: absolute;
+  content: '';
+  width: 65px;
+  height: 2px;
+  top: 50%;
+  background: black;
+  right: 10px;
+}
+.scrollArrow:after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 25px;
+  right: 10px;
+  border-bottom:  2px solid #141201;
+  border-right:  2px solid #141201;
+  transform: rotate(-45deg);
+}
+
+.scrollDown .scrollArrow {
+  left: -110%;
+  transform: rotate(180deg);
+  transform-origin: left;
+}
+
+.border-wrapper-appointment{
+  position: absolute;
+  border: 2px solid #141201;
+  bottom: 100%;
+  color: #141201;
+  text-align: center;
+  width: 100%;
+  transition: .4s;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.appointment-visible {
+  transform: scaleY(1);
+}
+.appointment-form{
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  padding:30px 0 50px;
+}
+.appointment-form-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.appointment-form-left label {
+  margin:0 40px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+}
+.appointment-form-left input, .appointment-form-right textarea{
+  border: 2px solid #141201;
+  width: 250px;
+  font-size: 14px;
+  padding:5px 10px;
+  background: #F4F4F4;
+  font-family: Montserrat-Regular, sans-serif;
+}
+.appointment-form-right textarea {
+  height: 100%;
+  margin-left: 30px;
+}
+.appointment-form-right  {
+  padding:0 24px 15px 0;
+  display: flex;
+  align-items: flex-start;
+}
+.closePhoto{
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  right: 12px;
+  top: 10px;
+  background: #FED731;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.closePhoto:before{
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 2px;
+  background: #141201;
+  top: 23px;
+  left: 18px;
+  transform: rotate(45deg);
+}
+.closePhoto:after{
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 2px;
+  background: #141201;
+  top: 23px;
+  left: 18px;
+  transform: rotate(-45deg);
+}
+.appointment-form-submit{
+  position: absolute;
+  width: 100%;
+  height: 65px;
+  top: 100%;
+}
+.appointment-form-submit input{
+  width: 100%;
+  height: 65px;
+  border: none;
+  color: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.border-page-list {
+  display: flex;
+}
+.border-page-list li {
+  position: relative;
+  border: 2px solid #b9b6be;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 0 7px;
+}
+.border-page-list li:before{
+  position: absolute;
+  content: '';
+  width: 7px;
+  height: 7px;
+  border: 1px solid #b9b6be;
+  border-radius: 100%;
+  top: 1px;
+  left: 1px;
+}
+.border-page-list .page-active{
+  border: 2px solid #141201;
+  background: #FED731;
+}
+
+
+@media all and (max-width: 1800px){
+  .appointment-form-left input, .appointment-form-right textarea {
+    width: 200px;
+  }
+  .appointment-form-left label {
+    width: 300px;
+    margin: 0 20px 15px;
+  }
+}
+@media all and (max-width: 1600px){
+  .appointment-form-left label {
+    margin: 0 10px 15px;
+  }
+  .requestCall input[name="phone"] {
+    width: 250px;
+    margin: 5px 30px;
+  }
+}
+@media all and (max-width: 1440px){
+  .appointment-form-left input, .appointment-form-right textarea {
+    width: 165px;
+  }
+  .appointment-form-left label {
+    width: 250px;
+  }
+}
