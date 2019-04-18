@@ -3,46 +3,57 @@
         <div class="services-head">
             <h2>наши услуги</h2>
         </div>
-        <div class="services-list">
-            <div class="services-list-item services-item-active">
-                <div class="services-item-logo">
-                    {{> image src='rent-sign.svg' }}
-                </div>
-                <div class="services-item-text">
-                    <h3>Аренда залов</h3>
-                    <p>описание услуги</p>
-                </div>
+        <div id="services-tabs" class="services-list">
+
+        <div class="services-list-item services-item-active" >
+            <div class="services-item-logo">
+                {{> image src='rent-sign.svg' }}
             </div>
-            <div class="services-list-item">
-                <div class="services-item-logo">
-                    {{> image src='photograf.svg' }}
-                </div>
-                <div class="services-item-text">
-                    <h3>услуги фотографа</h3>
-                    <p>описание услуги</p>
-                </div>
-            </div>
-            <div class="services-list-item">
-                <div class="services-item-logo">
-                    {{> image src='retush.svg' }}
-                </div>
-                <div class="services-item-text">
-                    <h3>ретуш фотографии </h3>
-                    <p>описание услуги</p>
-                </div>
-            </div>
-            <div class="services-list-item">
-                <div class="services-item-logo">
-                    {{> image src='dress.svg' }}
-                </div>
-                <div class="services-item-text">
-                    <h3>Аренда платья</h3>
-                    <p>описание услуги</p>
-                </div>
+            <div class="services-item-text">
+                <h3>Аренда залов</h3>
+                <p>описание услуги</p>
             </div>
         </div>
+        <div class="services-list-item" >
+            <div class="services-item-logo">
+                {{> image src='photograf.svg' }}
+            </div>
+            <div class="services-item-text">
+                <h3>услуги фотографа</h3>
+                <p>описание услуги</p>
+            </div>
+        </div>
+        <div class="services-list-item" >
+            <div class="services-item-logo">
+                {{> image src='retush.svg' }}
+            </div>
+            <div class="services-item-text">
+                <h3>ретуш фотографии </h3>
+                <p>описание услуги</p>
+            </div>
+        </div>
+        <div class="services-list-item" >
+            <div class="services-item-logo">
+                {{> image src='dress.svg' }}
+            </div>
+            <div class="services-item-text">
+                <h3>Аренда платья</h3>
+                <p>описание услуги</p>
+            </div>
+        </div>
+
+        </div>
         <div class="services-img">
-            <div class="services-img-item">
+            <div  class="services-img-item active-tab">
+                {{> image src='serv-image.png' }}
+            </div>
+            <div  class="services-img-item">
+                {{> image src='serv-image.png' }}
+            </div>
+            <div  class="services-img-item">
+                {{> image src='serv-image.png' }}
+            </div>
+            <div  class="services-img-item">
                 {{> image src='serv-image.png' }}
             </div>
         </div>
