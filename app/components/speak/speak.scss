@@ -54,5 +54,21 @@
   }
 }
 .speak-body-item-reverse{
-  flex-direction: revert!important;
+  flex-direction: row-reverse;
+  background: #fed731;
+  & .speak-item-testimonial{
+    font-size: 24px;
+    color: #7e7e7e;
+    margin:  0 0 30px 0;
+    position: relative;
+    z-index: 5;
+    &:before{
+      position: absolute;
+      content: url("/assets/images/opostrof.svg");
+      top: -80px;
+      left: -80px;
+      border-radius: 100%;
+      z-index: -1;
+    }
+  }
 }
