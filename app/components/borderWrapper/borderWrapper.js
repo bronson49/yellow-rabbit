@@ -5,6 +5,8 @@ const borderWrapperFunc = function () {
         $(this).removeClass('border-wrapper-nonActive');
         $('#makeCall').addClass('border-wrapper-nonActive');
         $('.border-wrapper-appointment').addClass('appointment-visible');
+
+        $('main').css({'opacity':'0.3'});
     });
 
     $('.closePhoto').click(function (event) {
@@ -19,6 +21,8 @@ const borderWrapperFunc = function () {
         $('#makeCall').removeClass('border-wrapper-nonActive');
         $('#makePhoto').addClass('border-wrapper-nonActive');
         $('.border-wrapper-appointment').removeClass('appointment-visible');
+
+        $('main').css({'opacity':'1'});
     }
 };
 

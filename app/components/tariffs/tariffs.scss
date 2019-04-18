@@ -8,10 +8,25 @@
   &-offers{
     display: flex;
     justify-content: space-around;
-    margin: 0 35px;
+    margin: 40px 0;
     &-item{
       border: 2px solid black;
       width: 350px;
+      &.active-tariff{
+        background: #FED731;
+        position: relative;
+        &:before{
+          position: absolute;
+          content: '';
+          width: 130px;
+          height: 130px;
+          right: -65px;
+          top: -65px;
+          background: #FED731;
+          z-index: -1;
+          border-radius: 100%;
+        }
+      }
     }
   }
 }
@@ -58,7 +73,43 @@
     }
   }
   &-order{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    & form {
+      width: 100%;
+      height: 40px;
+      padding: 0 20px;
+    }
+    & input[type="submit"]{
+      padding: 15px 60px;
+      border: none;
+      color: white;
+      background: #000;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
   }
 }
 
+
+
+@media all and (max-width: 1700px){
+  .tariffs-offers {
+    margin: 10px 0;
+  }
+  .offers-item-price{
+    padding: 10px 0 5px;
+  }
+  .offers-item-list ul {
+    margin: 25px 60px 20px;
+  }
+  .offers-item-price {
+    font-size: 60px;
+  }
+  .tariffs-offers-item{
+    width: 300px;
+  }
+}
