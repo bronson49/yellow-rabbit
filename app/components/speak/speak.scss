@@ -1,0 +1,58 @@
+.speak{
+  height: 100%;
+  border-bottom: 2px solid #333333;
+  overflow: hidden;
+  &-head {
+    padding: 35px 35px 0;
+    border-bottom: 2px solid #333333;
+  }
+  &-body{
+    &-item{
+      display: flex;
+
+    }
+  }
+  &-item-img{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 50px;
+  }
+  &-item-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding: 0 80px;
+    & .speak-item-testimonial{
+      font-size: 24px;
+      color: #7e7e7e;
+      margin:  0 0 30px 0;
+      position: relative;
+      z-index: 5;
+      &:before{
+        position: absolute;
+        content: url("/assets/images/opostrof-yellow.svg");
+        top: -80px;
+        left: -80px;
+        border-radius: 100%;
+        z-index: -1;
+      }
+    }
+    & .speak-item-autor{
+      font-size: 24px;
+      text-transform: capitalize;
+      align-self: flex-start;
+      span {
+        color: #a3a3a3;
+      }
+      img {
+        margin: 0 50px 0 0;
+      }
+    }
+  }
+}
+.speak-body-item-reverse{
+  flex-direction: revert!important;
+}
