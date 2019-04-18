@@ -10,7 +10,6 @@
   }
   &-body img {
     width: 100%;
-    padding: 50px;
   }
   &-body > div {
     border: 1px solid black;
@@ -30,6 +29,20 @@
   &-item4{
     /*grid-column: 2 / 2;*/
     /*grid-row: 4 / 6;*/
+    text-align: center;
+    padding: 10px 60px;
+    background: #000;
+    color: white;
+    h4 {
+      font-size: 20px;
+      text-transform: uppercase ;
+      font-weight: 600;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 200;
+      color: #b4b4b4;
+    }
   }
   &-item5{
     grid-column: 1 / 1;
@@ -38,5 +51,39 @@
   &-item6{
     grid-column: 2 / 4;
     grid-row: 5 / 10;
+  }
+  &-item-content {
+    width: 100%;
+    padding: 50px;
+    position: relative;
+  }
+  &-item-text{
+    position: absolute;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FED731;
+    opacity: 0;
+    transition: .4s;
+    &:hover{
+      opacity: 1;
+    }
+    p {
+      font-size: 24px;
+      width: 60%;
+      position: relative;
+      z-index: 5;
+      &:before{
+        position: absolute;
+        content: url("/assets/images/opostrof.svg");
+        top: -80px;
+        left: -80px;
+        border-radius: 100%;
+        z-index: -1;
+      }
+    }
   }
 }
