@@ -3,6 +3,8 @@
 }
 .family-photo-head{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 70px 40px 25px;
   border-bottom: 2px solid #333333;
   height: 25%;
@@ -15,11 +17,16 @@
   height: 75%;
   overflow: hidden;
 }
+.family-photo-slider-bar{
+  margin: 0 125px 0 50px;
+  position: relative;
+}
 .family-photo-list {
   height: 100%;
+  width: max-content;
   display: flex;
   transform: translateX(0px);
-  transition: .4s;
+  transition: .3s linear;
 }
 .family-photo-list li{
   border-right: 2px solid #333333;
@@ -37,4 +44,46 @@
   .family-photo-head{
     padding: 40px 30px 25px;
   }
+}
+
+
+.ui-slider-horizontal{
+  width: 205px;
+  height: 2px;
+  background: #C3C3C3;
+}
+.ui-slider-horizontal:after{
+  position: absolute;
+  content: '';
+  width: 75px;
+  height: 2px;
+  background: #C3C3C3;
+  left: 100%;
+}
+.ui-slider .ui-slider-handle{
+  width: 75px;
+  height: 5px;
+  border-top: 2px solid #141201;
+  cursor: pointer;
+  top: 0;
+  margin-left: 0;
+}
+
+.family-slide-prev, .family-slide-next{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  cursor: pointer;
+}
+.family-slide-prev {
+  top: -5px;
+  left: -20px;
+  transform: rotate(-45deg);
+}
+.family-slide-next {
+  top: -5px;
+  right: -95px;
+  transform: rotate(135deg);
 }
