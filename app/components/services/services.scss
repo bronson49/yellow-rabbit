@@ -7,12 +7,6 @@
   padding: 35px 35px 0;
 
 }
-.services-head h2 {
-  font-size: 30px;
-  letter-spacing: 2px;
-  font-family: Montserrat-Extra-Bold, sans-serif;
-  text-transform: uppercase;
-}
 
 .services-list{
   display: flex;
@@ -21,11 +15,13 @@
 .services-list-item{
   display: flex;
   margin-right: 130px;
+  cursor: pointer;
 }
 .services-item-text {
   padding: 0 30px;
 }
 .services-item-text h3{
+  color: #C3C3C3;
   margin: 0;
   text-transform: uppercase;
   font-weight: 600;
@@ -33,11 +29,27 @@
   width: max-content;
 }
 .services-item-text p {
+  color: #C3C3C3;
   margin: 30px 0;
 }
 .services-img{
 
 }
 .services-img-item img{
+  width: 100%;
+}
+.services-item-active img{
+  filter: brightness(0);
+}
+.services-item-active h3, .services-item-active p {
+  color: black;
+}
 
+@media all and (max-width: 1700px) {
+  .services-list {
+    margin: 35px;
+  }
+  .services-list-item {
+    margin-right: 5px;
+  }
 }

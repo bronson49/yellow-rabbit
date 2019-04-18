@@ -1,0 +1,64 @@
+.tariffs{
+  height: 100%;
+  border-bottom: 2px solid #333333;
+  overflow: hidden;
+  &-head {
+    padding: 35px 35px 0;
+  }
+  &-offers{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 35px;
+    &-item{
+      border: 2px solid black;
+      width: 350px;
+    }
+  }
+}
+
+
+.offers-item {
+  &-name{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+  }
+  &-price{
+    font-size: 78px;
+    font-family: Montserrat-Extra-Bold,sans-serif;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+    padding: 45px 0 35px;
+    span {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  }
+  &-list{
+    ul {
+      margin: 50px 80px 40px;
+      li {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 25px 0;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          width: 19px;
+          height: 19px;
+          border: 2px solid black;
+          border-radius: 100%;
+          left: -40px;
+          top: -2px;
+        }
+      }
+    }
+  }
+  &-order{
+
+  }
+}
+
