@@ -64,6 +64,7 @@ const borderWrapperFunc = function () {
     }
 
     document.body.addEventListener('wheel', handleScroll, { passive: false } );  // отменить пассивность ивента
+
     function handleScroll(e) {
         e.preventDefault();
         if  (!canScroll) return ;
@@ -97,6 +98,23 @@ const borderWrapperFunc = function () {
     }
 
 
+    // отменяем прокрутку над блоками с прокруткой
+    let scrollBlock = document.querySelectorAll('.container-big');
+    for (var i = 0; i < scrollBlock.length; i++){
+        scrollBlock[i].addEventListener('wheel', stopScroll, { passive: false } );
+    }
+
+    function stopScroll(e) {
+        let all = this.scrollHeight - (this.offsetHeight + this.scrollTop);
+        if (all !==0 && e.deltaY > 0){
+            e.stopPropagation();
+            console.log('stopPropagation');
+        }else if(this.scrollTop !==0 && e.deltaY < 0){
+            e.stopPropagation();
+            console.log('e.deltaY > 0');
+        }
+
+    }
 
 };
 
