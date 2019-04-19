@@ -29,6 +29,10 @@
       margin-top: 30px;
       height: 40px;
       border-top: 2px solid black;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      justify-content: space-between;
     }
   }
   &-text {
@@ -40,9 +44,43 @@
       font-size: 15px;
       font-weight: 600;
       color: #333333;
+      img {
+        display: initial;
+        padding: 0 10px;
+      }
+      .bold{
+        font-family: Montserrat-Extra-Bold,sans-serif;
+      }
     }
-
   }
+}
+
+.onmap-next, .onmap-prev{
+  height: 16px;
+  cursor: pointer;
+  z-index: 5;
+}
+.onmap-next{
+  transform: rotate(180deg);
+}
+.slick-dots {
+  bottom: -65px;
+  li {
+    button{
+      &:before{
+        content: '';
+        width: 7px;
+        height: 7px;
+        background: #F4F4F4;
+        border: 2px solid #141201;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  background: #FED731;
 }
 
 
