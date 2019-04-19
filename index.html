@@ -5,23 +5,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#3d3d3e">
-    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#3d3d3e">    <title>Yellow Rabbit</title>
+    <!--<link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">-->
+    <!--<link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">-->
+    <!--<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">-->
+    <!--<link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">-->
+    <!--<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">-->
+    <!--<link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">-->
+    <!--<link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">-->
+    <!--<link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">-->
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">-->
+    <!--<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">-->
+    <!--<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">-->
+    <!--<link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">-->
+    <link rel="icon" type="image/png" href="assets/favicons/favicon.ico">
+    <!--<link rel="manifest" href="assets/favicons/manifest.json">-->
+    <!--<meta name="msapplication-TileColor" content="#3d3d3e">-->
+    <!--<meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">-->
+    <!--<meta name="theme-color" content="#3d3d3e">-->    <title>Yellow Rabbit</title>
 <link href="app.css" rel="stylesheet"></head>
 <body>
 
@@ -116,11 +116,15 @@
             </a>
         </div>
     </div>    <main>
-        
         <section class="container">
             <div class="family-photo">
                 <div class="family-photo-head">
                     <h2>семейная фотосессия</h2>
+                    <div class="family-photo-slider-bar">
+                        <div class="family-slide-prev"></div>
+                        <div id="family-slide"></div>
+                        <div class="family-slide-next"></div>
+                    </div>
                 </div>
                 <div class="family-photo-slide">
                     <ul class="family-photo-list">
@@ -136,11 +140,557 @@
                             <img src="assets/images/family(2).png"
                                  alt="image"
                                 >                </li>
+                        <li>
+                            <img src="assets/images/family(1).png"
+                                 alt="image"
+                                >                </li>
+                        <li>
+                            <img src="assets/images/family.png"
+                                 alt="image"
+                                >                </li>
+                        <li>
+                            <img src="assets/images/family(2).png"
+                                 alt="image"
+                                >                </li>
                     </ul>
                 </div>
             </div>
         </section>
-    </main>
+        <section class="container">
+            <div class="services">
+                <div class="services-head">
+                    <h2>наши услуги</h2>
+                </div>
+                <div id="services-tabs" class="services-list">
+        
+                <div class="services-list-item services-item-active" >
+                    <div class="services-item-logo">
+                        <img src="assets/images/rent-sign.svg"
+                             alt="image"
+                            >            </div>
+                    <div class="services-item-text">
+                        <h3>Аренда залов</h3>
+                        <p>описание услуги</p>
+                    </div>
+                </div>
+                <div class="services-list-item" >
+                    <div class="services-item-logo">
+                        <img src="assets/images/photograf.svg"
+                             alt="image"
+                            >            </div>
+                    <div class="services-item-text">
+                        <h3>услуги фотографа</h3>
+                        <p>описание услуги</p>
+                    </div>
+                </div>
+                <div class="services-list-item" >
+                    <div class="services-item-logo">
+                        <img src="assets/images/retush.svg"
+                             alt="image"
+                            >            </div>
+                    <div class="services-item-text">
+                        <h3>ретуш фотографии </h3>
+                        <p>описание услуги</p>
+                    </div>
+                </div>
+                <div class="services-list-item" >
+                    <div class="services-item-logo">
+                        <img src="assets/images/dress.svg"
+                             alt="image"
+                            >            </div>
+                    <div class="services-item-text">
+                        <h3>Аренда платья</h3>
+                        <p>описание услуги</p>
+                    </div>
+                </div>
+        
+                </div>
+                <div class="services-img">
+                    <div  class="services-img-item active-tab">
+                        <img src="assets/images/serv-image.png"
+                             alt="image"
+                            >            </div>
+                    <div  class="services-img-item">
+                        <img src="assets/images/serv-image.png"
+                             alt="image"
+                            >            </div>
+                    <div  class="services-img-item">
+                        <img src="assets/images/serv-image.png"
+                             alt="image"
+                            >            </div>
+                    <div  class="services-img-item">
+                        <img src="assets/images/serv-image.png"
+                             alt="image"
+                            >            </div>
+                </div>
+            </div>
+        </section>        <section class="container">
+            <div class="tariffs">
+                <div class="tariffs-head">
+                    <h2>наши тарифы</h2>
+                </div>
+                <div class="tariffs-offers">
+                    <div class="tariffs-offers-item">
+                        <h3 class="offers-item-name">
+                            economy
+                        </h3>
+                        <div class="offers-item-price">
+                            <p>250<span>uah</span></p>
+                        </div>
+                        <div class="offers-item-list">
+                            <ul>
+                                <li>10 Projects</li>
+                                <li>Unlimite hoste projects</li>
+                                <li>Free Staging</li>
+                                <li>No Code Export</li>
+                                <li>No Whote labeling</li>
+                                <li>No site password protect</li>
+                            </ul>
+                        </div>
+                        <div class="offers-item-order">
+                            <form action="">
+                                <input type="submit" value="Заказать">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tariffs-offers-item">
+                        <h3 class="offers-item-name">
+                            economy
+                        </h3>
+                        <div class="offers-item-price">
+                            <p>300<span>uah</span></p>
+                        </div>
+                        <div class="offers-item-list">
+                            <ul>
+                                <li>10 Projects</li>
+                                <li>Unlimite hoste projects</li>
+                                <li>Free Staging</li>
+                                <li>No Code Export</li>
+                                <li>No Whote labeling</li>
+                                <li>No site password protect</li>
+                            </ul>
+                        </div>
+                        <div class="offers-item-order">
+                            <form action="">
+                                <input type="submit" value="Заказать">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tariffs-offers-item active-tariff">
+                        <h3 class="offers-item-name">
+                            economy
+                        </h3>
+                        <div class="offers-item-price">
+                            <p>400<span>uah</span></p>
+                        </div>
+                        <div class="offers-item-list">
+                            <ul>
+                                <li>10 Projects</li>
+                                <li>Unlimite hoste projects</li>
+                                <li>Free Staging</li>
+                                <li>No Code Export</li>
+                                <li>No Whote labeling</li>
+                                <li>No site password protect</li>
+                            </ul>
+                        </div>
+                        <div class="offers-item-order">
+                            <form action="">
+                                <input type="submit" value="Заказать">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tariffs-offers-item">
+                        <h3 class="offers-item-name">
+                            economy
+                        </h3>
+                        <div class="offers-item-price">
+                            <p>500<span>uah</span></p>
+                        </div>
+                        <div class="offers-item-list">
+                            <ul>
+                                <li>10 Projects</li>
+                                <li>Unlimite hoste projects</li>
+                                <li>Free Staging</li>
+                                <li>No Code Export</li>
+                                <li>No Whote labeling</li>
+                                <li>No site password protect</li>
+                            </ul>
+                        </div>
+                        <div class="offers-item-order">
+                            <form action="">
+                                <input type="submit" value="Заказать">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        <section class="container container-big">
+            <div class="about">
+                <div class="about-head">
+                    <h2>немного о нас</h2>
+                </div>
+                <div class="about-body">
+                    <div class="about-item1">
+                        <div class="about-item-content">
+                            <img src="assets/images/Mask Group.png"
+                                 alt="image"
+                                >                    <div class="about-item-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio eaque error excepturi fugiat fugit, hic illum labore minima nesciunt quasi reprehenderit voluptatum. Atque illum iste itaque neque, voluptatibus voluptatum?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-item2">
+                        <div class="about-item-content">
+                            <img src="assets/images/Mask Group (1).png"
+                                 alt="image"
+                                >                    <div class="about-item-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio eaque error excepturi fugiat fugit, hic illum labore minima nesciunt quasi reprehenderit voluptatum. Atque illum iste itaque neque, voluptatibus voluptatum?</p>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-item3">
+                        <div class="about-item-content">
+                            <img src="assets/images/Mask Group (2).png"
+                                 alt="image"
+                                >                    <div class="about-item-text">
+                                <p>Lorem im. Atque illum iste itaque neque, voluptatibus voluptatum?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-item4">
+                        <h4>short text</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, vero!</p>
+                    </div>
+                    <div class="about-item5">
+                        <div class="about-item-content">
+                            <img src="assets/images/Mask Group (4).png"
+                                 alt="image"
+                                >                    <div class="about-item-text">
+                                <p>Lorem ipsum dol. Atque illum iste itaque neque, voluptatibus voluptatum?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-item6">
+                        <div class="about-item-content">
+                            <img src="assets/images/Mask Group (3).png"
+                                 alt="image"
+                                >                    <div class="about-item-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio eaque error excepturi fugiat fugit, hic illum labore minima nesciunt quasi reprehenderit voluptatum. Atque illum iste itaque neque, voluptatibus voluptatum?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        <section class="container container-big">
+            <div class="speak">
+                <div class="speak-head">
+                    <h2>что о нас говорят клиенты</h2>
+                </div>
+                <div class="speak-body">
+                    <div class="speak-body-item">
+                        <div class="speak-item-img">
+                            <img src="assets/images/autor.png"
+                                 alt="image"
+                                >                </div>
+                        <div class="speak-item-text">
+                            <p class="speak-item-testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolorem doloribus eos nobis, porro voluptas voluptatem voluptates voluptatibus! Aliquam delectus enim mollitia natus suscipit. Deleniti doloribus explicabo laudantium placeat quis.</p>
+                            <p class="speak-item-autor"><img src="assets/images/testimon.svg"
+             alt="image"
+            >laura adams, <span>Dior model</span></p>
+                        </div>
+                    </div>
+                    <div class="speak-body-item speak-body-item-reverse">
+                        <div class="speak-item-img">
+                            <img src="assets/images/autor.png"
+                                 alt="image"
+                                >                </div>
+                        <div class="speak-item-text">
+                            <p class="speak-item-testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolorem doloribus eos nobis, porro voluptas voluptatem voluptates voluptatibus! Aliquam delectus enim mollitia natus suscipit. Deleniti doloribus explicabo laudantium placeat quis.</p>
+                            <p class="speak-item-autor"><img src="assets/images/testimon-white.svg"
+             alt="image"
+            >laura adams, <span>Dior model</span></p>
+                        </div>
+                    </div>
+                    <div class="speak-body-item">
+                        <div class="speak-item-img">
+                            <img src="assets/images/autor.png"
+                                 alt="image"
+                                >                </div>
+                        <div class="speak-item-text">
+                            <p class="speak-item-testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolorem doloribus eos nobis, porro voluptas voluptatem voluptates voluptatibus! Aliquam delectus enim mollitia natus suscipit. Deleniti doloribus explicabo laudantium placeat quis.</p>
+                            <p class="speak-item-autor"><img src="assets/images/testimon.svg"
+             alt="image"
+            >laura adams, <span>Dior model</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        <section class="container">
+            <div class="answers">
+                <div class="answers-head">
+                    <h2>ответы на вопросы</h2>
+                </div>
+                <div class="answers-body">
+                    <div class="answers-body-item left-question">
+                        <h3>финансовые вопросы</h3>
+                        <div class="answers-body-question">
+                            <h4>Сколько стоит фотосьемка?</h4>
+                            <p class="answers-body-answer">
+                                Цена будет зависеть от выбранного тарифа в диапазоне 50000 - 200000 грн.
+                            </p>
+                        </div>
+                        <div class="answers-body-question">
+                            <h4>Сколько стоит видеосьемка?</h4>
+                            <p class="answers-body-answer">
+                                Цена будет зависеть от выбранного тарифа в диапазоне 10 - 50 грн.
+                            </p>
+                        </div>
+                        <div class="answers-body-question">
+                            <h4>Какие у вас есть тарифы?</h4>
+                            <p class="answers-body-answer">
+                                Фото с мобильного на аватарку - 40грн.
+                            </p>
+                        </div>
+                        <div class="answers-body-question">
+                            <h4>Сколько фотографов у вас есть?</h4>
+                            <p class="answers-body-answer">
+                                Два с половиной
+                            </p>
+                        </div>
+                        <div class="answers-body-question">
+                            <h4>Зачем нужны фотографы?</h4>
+                            <p class="answers-body-answer">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita labore nihil soluta voluptatum? Accusantium aperiam consectetur ducimus eligendi, excepturi hic, id iste minus non nulla quos reiciendis, reprehenderit rerum vitae.
+                            </p>
+                        </div>
+                        <div class="answers-body-question">
+                            <h4>Как к вам добратся?</h4>
+                            <p class="answers-body-answer">
+                                прямо и на лево
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="answers-body-item">
+                        <h3>организация фотосъемки</h3>
+                        <div class="answers-body-question">
+                            <h4>Сколько стоит фотосьемка?</h4>
+                            <p class="answers-body-answer">
+                                Цена будет зависеть от выбранного тарифа в диапазоне 50000 - 200000 грн.
+                            </p>
+                        </div>
+                        <div class="answers-body-question">
+                            <h4>Какие у вас есть тарифы?</h4>
+                            <p class="answers-body-answer">
+                                Фото с мобильного на аватарку - 40грн.
+                            </p>
+                        </div>
+                        <div class="answers-body-question">
+                            <h4>Сколько фотографов у вас есть?</h4>
+                            <p class="answers-body-answer">
+                                Два с половиной
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="answers-body-item">
+                        <h3>другие вопросы</h3>
+                        <div class="answers-body-question">
+                            <h4>Сколько стоит фотосьемка?</h4>
+                            <p class="answers-body-answer">
+                                Цена будет зависеть от выбранного тарифа в диапазоне 50000 - 200000 грн.
+                            </p>
+                        </div>
+                        <div class="answers-body-question">
+                            <h4>Какие у вас есть тарифы?</h4>
+                            <p class="answers-body-answer">
+                                Фото с мобильного на аватарку - 40грн.
+                            </p>
+                        </div>
+                        <div class="answers-body-question">
+                            <h4>Сколько фотографов у вас есть?</h4>
+                            <p class="answers-body-answer">
+                                Два с половиной
+                            </p>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>        <section class="container">
+            <div class="onmap">
+                <div class="onmap-head">
+                    <h2>мы на карте</h2>
+                </div>
+                <div class="onmap-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d10161.812606233969!2d30.6294305!3d50.4512858!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1555665610137!5m2!1sru!2sua"
+                            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="onmap-slider">
+        
+                    <div class="onmap-slider-body" id="onmap-init-slider">
+                        <div class="onmap-slider-item">
+                            <h3>Контактная информация</h3>
+                            <div class="onmap-text">
+                                <span class="onmap-text-left">
+                                        Адрес:
+                                </span>
+                                <span class="onmap-text-right">
+                                    улица Павла Усенка 8
+                                </span>
+                            </div>
+                            <div class="onmap-text">
+                                <span class="onmap-text-left">
+                                        Телефон:
+                                </span>
+                                <span class="onmap-text-right">
+                                        +380 66 525 25 25
+                                </span>
+                            </div>
+                            <div class="onmap-text">
+                                <span class="onmap-text-left">
+                                        Почта:
+                                </span>
+                                <span class="onmap-text-right">
+                                        fotorabbit@gmail.com
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="onmap-slider-item">
+                            <h3> метро дарница</h3>
+                            <div class="onmap-text">
+                                <span class="onmap-text-left">
+                                     <img src="assets/images/gazel.svg"
+                                          alt="image"
+                                         >                                маршрутка <span class="bold">№423</span>
+                                </span>
+                                <span class="onmap-text-right">
+                                    <img src="assets/images/watch.svg"
+                                         alt="image"
+                                        >                            15 мин
+                                </span>
+                            </div>
+                            <div class="onmap-text">
+                                <span class="onmap-text-left">
+                                    <img src="assets/images/train.svg"
+                                         alt="image"
+                                        >                                трамвай <span class="bold">№22,23</span>
+                                </span>
+                                <span class="onmap-text-right">
+                                    <img src="assets/images/watch.svg"
+                                         alt="image"
+                                        >                            22 мин
+                                </span>
+                            </div>
+                            <div class="onmap-text">
+                                <span class="onmap-text-left">
+                                    <img src="assets/images/taxi.svg"
+                                         alt="image"
+                                        >                                такси <span class="bold">45-60&#8372;</span>
+                                </span>
+                                <span class="onmap-text-right">
+                                    <img src="assets/images/watch.svg"
+                                         alt="image"
+                                        >                            7 мин
+                                </span>
+                            </div>
+                        </div>
+                        <div class="onmap-slider-item">
+                            <h3> метро черниговская</h3>
+                            <div class="onmap-text">
+                                <span class="onmap-text-left">
+                                     <img src="assets/images/gazel.svg"
+                                          alt="image"
+                                         >                            маршрутка <span class="bold">№423</span>
+                                </span>
+                                <span class="onmap-text-right">
+                                    <img src="assets/images/watch.svg"
+                                         alt="image"
+                                        >                            15 мин
+                                </span>
+                            </div>
+                            <div class="onmap-text">
+                                <span class="onmap-text-left">
+                                    <img src="assets/images/train.svg"
+                                         alt="image"
+                                        >                            трамвай <span class="bold">№22,23</span>
+                                </span>
+                                <span class="onmap-text-right">
+                                    <img src="assets/images/watch.svg"
+                                         alt="image"
+                                        >                            22 мин
+                                </span>
+                            </div>
+                            <div class="onmap-text">
+                                <span class="onmap-text-left">
+                                    <img src="assets/images/taxi.svg"
+                                         alt="image"
+                                        >                            такси <span class="bold">45-60&#8372;</span>
+                                </span>
+                                <span class="onmap-text-right">
+                                    <img src="assets/images/watch.svg"
+                                         alt="image"
+                                        >                            7 мин
+                                </span>
+                            </div>
+                        </div>
+                        <div class="onmap-slider-item">
+                            <h3> метро левобережная</h3>
+                            <div class="onmap-text">
+                                <span class="onmap-text-left">
+                                     <img src="assets/images/gazel.svg"
+                                          alt="image"
+                                         >                            маршрутка <span class="bold">№423</span>
+                                </span>
+                                <span class="onmap-text-right">
+                                    <img src="assets/images/watch.svg"
+                                         alt="image"
+                                        >                            15 мин
+                                </span>
+                            </div>
+                            <div class="onmap-text">
+                                <span class="onmap-text-left">
+                                    <img src="assets/images/train.svg"
+                                         alt="image"
+                                        >                            трамвай <span class="bold">№22,23</span>
+                                </span>
+                                <span class="onmap-text-right">
+                                    <img src="assets/images/watch.svg"
+                                         alt="image"
+                                        >                            22 мин
+                                </span>
+                            </div>
+                            <div class="onmap-text">
+                                <span class="onmap-text-left">
+                                    <img src="assets/images/taxi.svg"
+                                         alt="image"
+                                        >                            такси <span class="bold">45-60&#8372;</span>
+                                </span>
+                                <span class="onmap-text-right">
+                                    <img src="assets/images/watch.svg"
+                                         alt="image"
+                                        >                            7 мин
+                                </span>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+        
+                    <div class="onmap-slider-controls">
+                        <div class="onmap-prev"> <img src="assets/images/onmap-arrow.svg"
+             alt="image"
+            ></div>
+                        <div class="onmap-next"> <img src="assets/images/onmap-arrow.svg"
+             alt="image"
+            ></div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>    </main>
 
 
 <script type="text/javascript" src="app.js"></script></body>
