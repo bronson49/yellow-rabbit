@@ -37,6 +37,7 @@
     "nodemon": "^1.18.10",
     "postcss-loader": "^3.0.0",
     "prompt": "^1.0.0",
+    "slick-carousel": "^1.8.1",
     "styles-loader": "^1.0.0",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
