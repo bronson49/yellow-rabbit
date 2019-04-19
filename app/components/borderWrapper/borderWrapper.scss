@@ -276,6 +276,7 @@
 
 .border-page-list {
   display: flex;
+  flex-direction: row-reverse;
 }
 .border-page-list li {
   position: relative;
@@ -284,6 +285,7 @@
   width: 15px;
   height: 15px;
   margin: 0 7px;
+  cursor: pointer;
 }
 .border-page-list li:before{
   position: absolute;
