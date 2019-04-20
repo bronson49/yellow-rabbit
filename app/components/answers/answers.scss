@@ -80,3 +80,19 @@
   grid-column: 1 / 1;
   grid-row: 1 / 3;
 }
+
+@media all and (max-width: 450px) {
+  .answers-head {
+    padding: 5px 20px;
+  }
+  .answers-body {
+    display: flex;
+    flex-direction: column;
+    &-item{
+      margin: 20px;
+    }
+    &-question h4 {
+      padding-right: 20px;
+    }
+  }
+}

@@ -83,7 +83,16 @@
   background: #FED731;
 }
 
-
+@media all and (max-width: 450px){
+  .onmap-head{
+    padding: 0 20px;
+  }
+  .onmap-slider{
+    top: 50px;
+    left: 0;
+    width: 100%;
+  }
+}
 
 
 
