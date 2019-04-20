@@ -22,6 +22,19 @@ const servicesFunc = function () {
         });
         $('[data-tab-index="'+href+'"]').addClass('active-tab');
     });
+
+    if (window.matchMedia('(max-width : 450px)').matches){
+        $('#services-tabs').on('afterChange', function(event, slick, currentSlide){
+            $('[data-slick-index="'+currentSlide+'"]').click();
+        });
+
+        $('#services-tabs').slick({
+            prevArrow: $('.services-prev'),
+            nextArrow: $('.services-next'),
+            dots: false ,
+        });
+    }
+
 };
 
 export {servicesFunc}

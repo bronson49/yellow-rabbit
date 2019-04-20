@@ -329,3 +329,16 @@
     width: 250px;
   }
 }
+
+@media all and (max-width: 450px){
+  .border-wrapper-top{
+    padding: 16px 20px 12px;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    border: none;
+  }
+  .logo{
+    height: 24px;
+  }
+}

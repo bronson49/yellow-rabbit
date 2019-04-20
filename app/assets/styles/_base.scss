@@ -34,3 +34,26 @@ a {
 .container-big {
   overflow-y: scroll;
 }
+
+
+@media all and (min-width: 451px){
+  .desktop-none {
+    display: none!important;
+  }
+}
+@media all and (max-width: 450px){
+  .mobile-none {
+    display: none!important;
+  }
+  .container{
+    margin: 50px 0;
+    height: calc(100vh - 50px);
+  }
+  .container-auto {
+    height: auto;
+  }
+  h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}

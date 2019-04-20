@@ -53,8 +53,36 @@
   color: black;
 }
 
+.services-slider-controls{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.services-next, .services-prev{
+  height: 16px;
+  cursor: pointer;
+  z-index: 5;
+}
+.services-next{
+  transform: rotate(180deg);
+}
+
 @media all and (max-width: 1700px) {
   .services-list {
     margin: 20px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .services-head {
+    padding:0 20px ;
+  }
+  .services-list-item{
+    display: flex!important;
+  }
+  .services-img {
+    height: 200px;
   }
 }

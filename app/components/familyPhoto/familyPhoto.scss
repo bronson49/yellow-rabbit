@@ -87,3 +87,24 @@
   right: -95px;
   transform: rotate(135deg);
 }
+
+@media all and (max-width: 450px){
+  .family-photo-head h2 {
+    font-size: 18px;
+  }
+  .family-photo-head{
+    padding: 0 20px 10px;
+    height: 10%;
+  }
+  .family-photo-slide{
+    height: 90%;
+    overflow-x: scroll;
+  }
+  .family-photo-list img {
+    padding: 20px;
+  }
+  .family-photo-list li {
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+  }
+}
