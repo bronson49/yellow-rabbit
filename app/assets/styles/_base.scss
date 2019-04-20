@@ -49,6 +49,9 @@ a {
     margin: 50px 0;
     height: calc(100vh - 50px);
   }
+  .container-big {
+    overflow-y: hidden;
+  }
   .container-auto {
     height: auto;
   }
