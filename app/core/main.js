@@ -7,6 +7,7 @@ import {aboutFunc} from "../components/about/about";
 import {speakFunc} from "../components/speak/speak";
 import {answersFunc} from "../components/answers/answers";
 import {onmapFunc} from "../components/onmap/onmap";
+import {menuFunc} from "../components/mobileMenu/mobileMenu";
 
 $(document).ready(function () {
     borderWrapperFunc();
@@ -17,5 +18,6 @@ $(document).ready(function () {
     speakFunc();
     answersFunc();
     onmapFunc();
+    menuFunc();
 });
 
