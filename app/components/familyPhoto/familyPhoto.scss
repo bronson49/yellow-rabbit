@@ -67,6 +67,17 @@
   cursor: pointer;
   top: 0;
   margin-left: 0;
+  &:after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #FED731 ;
+    border: 2px solid #141201;
+    border-radius: 100%;
+    top: -9px;
+    left: 29px;
+  }
 }
 
 .family-slide-prev, .family-slide-next{

@@ -51,7 +51,6 @@
         font-size: 15px;
         padding:0 35% 0 0;
         overflow: hidden;
-        transform: scaleY(0);
         max-height: 0;
         transition: .3s linear;
         transform-origin: top;
@@ -72,8 +71,7 @@
   p {
     padding:10px 35% 20px 0;
     color: #141201;
-    max-height: 500px;
-    transform: scaleY(1);
+    max-height: 100px;
   }
 }
 .left-question{

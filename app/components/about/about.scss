@@ -13,6 +13,9 @@
   }
   &-body > div {
     border: 1px solid black;
+    &:nth-child(1),&:nth-child(3),&:nth-child(5){
+      border-left: none;
+    }
   }
   &-item1{
     grid-column: 1 / 3;

@@ -182,16 +182,19 @@
   position: absolute;
   border: 2px solid #141201;
   bottom: 100%;
+  padding-top: 25px;
   color: #141201;
   text-align: center;
   width: 100%;
   transition: .4s;
-  transform: scaleY(0);
+  visibility: hidden;
+  opacity: 0;
   transform-origin: bottom;
   background: $background;
 }
 .appointment-visible {
-  transform: scaleY(1);
+  visibility: visible;
+  opacity: 1;
 }
 .appointment-form{
   display: flex;
@@ -267,10 +270,15 @@
 .appointment-form-submit input{
   width: 100%;
   height: 65px;
-  border: none;
-  color: transparent;
-  background: transparent;
+  border-top: 2px solid #141201;
+  border-left: none;
+  border-right: none;
+  color: #141201;
+  background: $background;
   cursor: pointer;
+  font-family: Montserrat-Regular,sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 
@@ -351,9 +359,6 @@
     li {
       margin: 0 15px;
     }
-  }
-  .border-wrapper-appointment{
-    padding-top: 25px;
   }
   .border-wrapper-photo{
     background: #FED731;
