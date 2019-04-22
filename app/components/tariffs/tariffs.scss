@@ -73,24 +73,98 @@
     }
   }
   &-order{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 35px;
-    & form {
-      width: 100%;
-      height: 40px;
-      padding: 0 20px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    background: #000000;
+    text-align: center;
+    color: white;
+  }
+}
+.offers-make-order{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: $background;
+  transition: .5s;
+  &-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    margin: 40px 0;
+    span {
+      text-transform: uppercase;
+      color: #141201;
+      font-weight: 600;
+      font-size: 20px;
+      height: 0;
     }
-    & input[type="submit"]{
-      padding: 15px 60px;
-      border: none;
-      color: white;
-      background: #000;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0 ;
+      padding: 0 30px;
       width: 100%;
-      height: 100%;
-      cursor: pointer;
+      font-weight: 600;
+      input {
+        border: 2px solid #141201;
+        padding: 9px;
+        width: 200px;
+      }
     }
+  }
+}
+.tariffs-submit{
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: #000000;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+.closeOffer{
+  position: relative;
+  width: 48px;
+  height: 48px;
+  right: 12px;
+  top: 10px;
+  background: #FED731;
+  border-radius: 100%;
+  cursor: pointer;
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 2px;
+    background: #141201;
+    top: 23px;
+    left: 18px;
+    transform: rotate(45deg);
+  }
+  &:after{
+    transform: rotate(-45deg);
+  }
+}
+.offers-form-open{
+
+  .offers-make-order{
+    visibility: visible;
+    opacity: 1;
   }
 }
 
