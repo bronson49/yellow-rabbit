@@ -13,6 +13,9 @@
       border: 2px solid black;
       width: 350px;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       &:after{
         content: '';
         position: absolute;
@@ -51,12 +54,14 @@
     font-weight: 900;
     font-size: 18px;
     text-align: center;
+    border-bottom: 2px solid black;
+    margin: 0;
+    padding: 15px 0;
   }
   &-price{
     font-size: 78px;
     font-family: Montserrat-Extra-Bold,sans-serif;
     text-align: center;
-    border-top: 2px solid black;
     border-bottom: 1px solid black;
     padding: 45px 0 35px;
     span {
@@ -65,6 +70,7 @@
     }
   }
   &-list{
+    height: 100%;
     ul {
       margin: 50px 80px 40px;
       li {
