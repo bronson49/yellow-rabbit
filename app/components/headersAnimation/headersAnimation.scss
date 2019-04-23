@@ -1,0 +1,73 @@
+body, html {
+  cursor: none;
+}
+.cursor-all {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.cursor-center {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background: #000;
+  height: 14px;
+  width: 14px;
+  border: 1px solid #fff;
+  z-index: 16;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cursor-center:after {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  height: 23px;
+  width: 23px;
+  background: transparent;
+  border: 1px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cursor-center:before {
+  content: '';
+  display: block;
+
+  height: 25px;
+  border-radius: 50%;
+  width: 25px;
+  background: transparent;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cursor-magnet {
+  background: #FED731;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+}
+.cursor-all.active .cursor-magnet {
+  height: 60px;
+  width: 60px;
+}
+.mouse-event {
+  position: relative;
+  z-index: 3;
+}
+.mouse-event.over {
+  color: rgba(255,0,0,0);
+  -webkit-text-stroke: 1px rgba(0,0,0,1);
+  -webkit-text-fill-color: rgba(0,0,0,0);
+}

@@ -8,6 +8,7 @@ import {speakFunc} from "../components/speak/speak";
 import {answersFunc} from "../components/answers/answers";
 import {onmapFunc} from "../components/onmap/onmap";
 import {menuFunc} from "../components/mobileMenu/mobileMenu";
+import {headersAnimation} from "../components/headersAnimation/headersAnimation";
 
 $(document).ready(function () {
     borderWrapperFunc();
@@ -19,5 +20,6 @@ $(document).ready(function () {
     answersFunc();
     onmapFunc();
     menuFunc();
+    headersAnimation();
 });
 
