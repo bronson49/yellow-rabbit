@@ -1,7 +1,5 @@
 .answers {
-  height: 100%;
-  border-bottom: 2px solid #333333;
-  overflow: hidden;
+
   &-head{
     padding: 35px 35px 0;
   }
@@ -30,12 +28,12 @@
       h4 {
         color:  #999999;
         font-size: 18px;
-        margin: 0 0 10px;
+        margin: 0 20px 10px 0;
         position: relative;
         &:before, &:after{
           position: absolute;
           content: '';
-          right: 0;
+          left: 100%;
           top: 10px;
           width: 20px;
           height: 2px;
