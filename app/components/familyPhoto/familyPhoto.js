@@ -33,7 +33,7 @@ const familyPhotoFunc = function () {
             $('#family-slide').slider('value', val-stepClick);
             $(photoList).css({'transform':'translateX(-'+(val-stepClick)+'px)'});
         });
-    }, 1000);
+    }, 2000);
 
 
 };
