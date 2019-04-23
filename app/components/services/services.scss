@@ -73,6 +73,9 @@
   .services-list {
     margin: 20px;
   }
+  .services-item-text h3{
+    max-width: 240px;
+  }
 }
 
 @media all and (max-width: 450px) {

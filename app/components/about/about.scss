@@ -130,6 +130,17 @@
   display: block;
 }
 
+@media all and  (max-width: 1700px){
+  .about-item-text {
+    p {
+      font-size: 18px;
+      &:before{
+        transform: scale(.8);
+      }
+    }
+  }
+}
+
 @media all and  (max-width: 450px) {
   .about-head{
     padding: 0 20px;
