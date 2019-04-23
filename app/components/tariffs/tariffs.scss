@@ -86,7 +86,6 @@
     }
   }
   &-order{
-    margin-bottom: 35px;
     position: relative;
     width: 100%;
     height: 40px;
@@ -208,13 +207,38 @@
     padding: 10px 0 5px;
   }
   .offers-item-list ul {
-    margin: 25px 60px 20px;
+    margin: 25px 5px 20px 50px;
   }
   .offers-item-price {
     font-size: 60px;
   }
   .tariffs-offers-item{
-    width: 300px;
+    width: 260px;
+  }
+  .offers-make-order{
+    &-head {
+      padding: 0 15px;
+      span {
+        font-size: 14px;
+      }
+    }
+    & form {
+      label {
+        font-size: 14px;
+        padding: 0 15px;
+        input{
+          width: 150px;
+        }
+      }
+    }
+  }
+  .tariffs-offers-item.active-tariff{
+    &:before{
+      width: 80px;
+      height: 80px;
+      right: -40px;
+      top: -40px;
+    }
   }
 }
 
