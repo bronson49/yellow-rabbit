@@ -12,6 +12,18 @@
     &-item{
       border: 2px solid black;
       width: 350px;
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: white;
+        opacity: 0;
+        transition: 0.4s;
+      }
       &.active-tariff{
         background: #FED731;
         position: relative;
@@ -33,6 +45,7 @@
 
 
 .offers-item {
+
   &-name{
     text-transform: uppercase;
     font-weight: 900;
@@ -81,6 +94,7 @@
     background: #000000;
     text-align: center;
     color: white;
+    z-index: 5;
   }
 }
 .offers-make-order{
@@ -90,7 +104,6 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: $background;
   transition: .5s;
   &-head{
     display: flex;
@@ -161,7 +174,9 @@
   }
 }
 .offers-form-open{
-
+  &:after{
+    opacity: 0.92;
+  }
   .offers-make-order{
     visibility: visible;
     opacity: 1;
