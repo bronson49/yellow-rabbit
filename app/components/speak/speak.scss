@@ -16,6 +16,9 @@
     border-right: 2px solid black;
     border-bottom: 2px solid black;
     padding: 50px;
+    img {
+      width: 100%;
+    }
   }
   &-item-text{
     display: flex;

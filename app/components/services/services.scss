@@ -4,14 +4,14 @@
   overflow: hidden;
 }
 .services-head{
-  padding: 35px 35px 0;
+  padding: 25px 35px 0;
 
 }
 
 .services-list{
   display: flex;
   justify-content: space-around;
-  margin: 70px 35px;
+  margin: 60px 35px;
 }
 .services-list-item{
   display: flex;
@@ -70,11 +70,20 @@
 }
 
 @media all and (max-width: 1700px) {
-  .services-list {
-    margin: 20px;
+  .services-head{
+    padding: 0 35px 0;
   }
-  .services-item-text h3{
-    max-width: 240px;
+  .services-list {
+    margin: 20px 20px 5px;
+  }
+  .services-item-text{
+    padding: 0 15px;
+    & h3{
+      max-width: 240px;
+    }
+    & p{
+      margin: 15px 0 5px;
+    }
   }
 }
 
