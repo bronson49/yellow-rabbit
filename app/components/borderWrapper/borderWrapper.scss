@@ -312,6 +312,13 @@
 .logo{
   height: 33px;
 }
+.header-phone{
+  position: absolute;
+  right: 100px;
+  a {
+    color: #141201;
+  }
+}
 
 @media all and (max-width: 1800px){
   .appointment-form-left input, .appointment-form-right textarea {
