@@ -1,0 +1,18 @@
+.seo-text{
+  height: 100%;
+  overflow: hidden;
+  &-head{
+    padding: 35px 35px 40px;
+  }
+  &-body{
+    column-count: 2;
+    column-gap: 50px;
+    p {
+      font-size: 18px;
+      color: #141201;
+      padding: 0 35px;
+      font-weight: 600;
+      line-height: 40px;
+    }
+  }
+}
