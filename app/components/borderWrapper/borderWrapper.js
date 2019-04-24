@@ -17,7 +17,7 @@ const borderWrapperFunc = function () {
     });
 
     function closePhotoForm(event) {
-        event.stopPropagation();
+        if (event){ event.stopPropagation();}
         $('#makeCall').removeClass('border-wrapper-nonActive');
         $('#makePhoto').addClass('border-wrapper-nonActive');
         $('.border-wrapper-appointment').removeClass('appointment-visible');
@@ -125,7 +125,10 @@ const borderWrapperFunc = function () {
             url: "",
             data: $(this).serialize()
         }).done(function () {
-            $('#makeCall').html('<p>Спасибо, мы с вами скоро свяжемся!</p>');
+            $('#makeCall').append('<p class="ajax-msg">Спасибо, мы с вами скоро свяжемся!</p>');
+            setTimeout(function () {
+                $('.ajax-msg').remove();
+            },3000)
         });
         return false;
     });
@@ -135,7 +138,11 @@ const borderWrapperFunc = function () {
             url: "",
             data: $(this).serialize()
         }).done(function () {
-            $('#makePhoto').html('<p>Спасибо, мы с вами скоро свяжемся!</p>');
+            $('#makePhoto').append('<p class="ajax-msg">Спасибо, мы с вами скоро свяжемся!</p>');
+            setTimeout(function () {
+                $('.ajax-msg').remove();
+                closePhotoForm();
+            },3000)
         });
         return false;
     });

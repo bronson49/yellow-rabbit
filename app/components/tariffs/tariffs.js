@@ -16,8 +16,11 @@ const tariffsFunc = function () {
             url: "",
             data: $(this).serialize()
         }).done(function () {
-            $(parent).html('<p>Спасибо, мы с Вами свяжемся!</p>');
-            console.log(parent);
+            $(parent).append('<p class="ajax-msg-tarrif">Спасибо, мы с Вами свяжемся!</p>');
+            setTimeout(function () {
+                $('.ajax-msg-tarrif').remove();
+                $(parent).closest('.tariffs-offers-item').removeClass('offers-form-open');
+            },3000)
         });
         return false;
     });
