@@ -78,6 +78,9 @@
     top: -9px;
     left: 29px;
   }
+  &:focus{
+    outline: none;
+  }
 }
 
 .family-slide-prev, .family-slide-next{

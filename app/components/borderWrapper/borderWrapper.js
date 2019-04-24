@@ -114,6 +114,32 @@ const borderWrapperFunc = function () {
 
     }
 
+    // validation
+    const im = new Inputmask("+38 999-999-99-99");
+    im.mask('input[name=phone]');
+
+    // ajax
+    $('.requestCall').submit(function () {
+        $.ajax({
+            type: "GET",
+            url: "",
+            data: $(this).serialize()
+        }).done(function () {
+            $('#makeCall').html('<p>Спасибо, мы с вами скоро свяжемся!</p>');
+        });
+        return false;
+    });
+    $('.appointment-form').submit(function () {
+        $.ajax({
+            type: "GET",
+            url: "",
+            data: $(this).serialize()
+        }).done(function () {
+            $('#makePhoto').html('<p>Спасибо, мы с вами скоро свяжемся!</p>');
+        });
+        return false;
+    });
+
 };
 
 export {borderWrapperFunc}

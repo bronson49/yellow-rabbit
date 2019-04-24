@@ -9,6 +9,19 @@ const tariffsFunc = function () {
        $(this).closest('.tariffs-offers-item').removeClass('offers-form-open');
     });
 
+    $('.order-tariff').submit(function () {
+        let parent = $(this).closest('.offers-item-order');
+        $.ajax({
+            type: "GET",
+            url: "",
+            data: $(this).serialize()
+        }).done(function () {
+            $(parent).html('<p>Спасибо, мы с Вами свяжемся!</p>');
+            console.log(parent);
+        });
+        return false;
+    });
+
     if (window.matchMedia('(max-width : 450px)').matches){
 
         $('.tariffs-offers').slick({
@@ -18,6 +31,7 @@ const tariffsFunc = function () {
             initialSlide: 2,
         });
     }
+
 };
 
 export {tariffsFunc}
