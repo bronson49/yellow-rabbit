@@ -327,17 +327,7 @@
   text-align: center;
   background: $background;
   font-size: 14px;
-  &-tarrif{
-    position: absolute;
-    padding: 15px;
-    width: 100%;
-    text-align: center;
-    background: $background;
-    font-size: 14px;
-    top: 0;
-    left: 0;
-    color: black;
-  }
+
 }
 
 @media all and (max-width: 1800px){

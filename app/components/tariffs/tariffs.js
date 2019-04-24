@@ -10,7 +10,7 @@ const tariffsFunc = function () {
     });
 
     $('.order-tariff').submit(function () {
-        let parent = $(this).closest('.offers-item-order');
+        let parent = $(this).closest('.tariffs-offers-item');
         $.ajax({
             type: "GET",
             url: "",
@@ -19,7 +19,7 @@ const tariffsFunc = function () {
             $(parent).append('<p class="ajax-msg-tarrif">Спасибо, мы с Вами свяжемся!</p>');
             setTimeout(function () {
                 $('.ajax-msg-tarrif').remove();
-                $(parent).closest('.tariffs-offers-item').removeClass('offers-form-open');
+                $(parent).removeClass('offers-form-open');
             },3000)
         });
         return false;
