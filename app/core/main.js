@@ -21,6 +21,6 @@ $(document).ready(function () {
     answersFunc();
     onmapFunc();
     menuFunc();
-    // headersAnimation();
+    headersAnimation();
 });
 

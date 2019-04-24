@@ -129,7 +129,7 @@ module.exports = (env, argv) => {
                 './assets/styles/main.scss'
             ],
         },
-        devtool: MODE === 'development' ? 'eval' : 'source-map' ,
+        devtool: MODE === 'development' ? 'eval' : 'source-maps' ,
         plugins: plugins,
         resolve: {
             alias: {

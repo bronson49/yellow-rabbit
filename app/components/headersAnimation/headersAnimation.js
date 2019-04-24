@@ -1,7 +1,10 @@
-function headersAnimation() {
+const headersAnimation = function () {
     let h2 = $('h2');
-    let pX, pY
-
+    let h3 = $('.tariffs .offers-item-price-count');
+    h3.each(function () {
+        h2.push($(this))
+    })
+    let pX, pY;
     h2.each(function () {
         let arr = '';
         let inner =  $(this).html();
@@ -71,4 +74,4 @@ function headersAnimation() {
         ) - Math.round(elem.width()/2);
     }
 }
-headersAnimation()
+export {headersAnimation};
