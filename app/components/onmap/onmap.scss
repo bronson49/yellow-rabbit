@@ -1,3 +1,4 @@
+
 .onmap{
   height: 100%;
   border-top: 2px solid #333333;
@@ -55,7 +56,9 @@
     }
   }
 }
-
+#map {
+  height: 100%;
+}
 .onmap-next, .onmap-prev{
   height: 16px;
   cursor: pointer;
