@@ -224,17 +224,23 @@
 }
 
 @media all and (max-width: 1700px){
+  .tariffs-head{
+    padding: 0 35px 0;
+  }
   .tariffs-offers {
     margin: 10px 0;
   }
   .offers-item-price{
-    padding: 10px 0 5px;
+    padding: 5px 0 5px;
+    span {
+      font-size: 50px;
+    }
+  }
+  .offers-item-name {
+    font-size: 16px;
   }
   .offers-item-list ul {
     margin: 25px 5px 20px 50px;
-  }
-  .offers-item-price {
-    font-size: 20px;
   }
   .tariffs-offers-item{
     width: 260px;
