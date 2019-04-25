@@ -107,6 +107,14 @@
   transform: rotate(180deg);
 }
 
+@media all and  (max-width: 1370px){
+  .speak-item-text .speak-item-testimonial{
+    font-size: 18px;
+    &:before{
+      transform: scale(0.6);
+    }
+  }
+}
 @media all and  (max-width: 450px){
   .speak-head{
     padding: 5px 20px;
