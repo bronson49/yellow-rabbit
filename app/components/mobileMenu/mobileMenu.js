@@ -13,6 +13,7 @@ const menuFunc = function () {
     });
     if (window.matchMedia('(max-width : 450px)').matches){
         addToMenu('.social-icons');
+        addToMenu('#makeCall');
         addToMenu('#makePhoto');
     }
     function addToMenu(selector) {
@@ -21,6 +22,10 @@ const menuFunc = function () {
         $(place).append($(selector));
         $('.menu-list').append(place);
     }
+
+    $('#makeCall').click(function (e) {
+        e.stopPropagation();
+    });
 };
 
 export {menuFunc}

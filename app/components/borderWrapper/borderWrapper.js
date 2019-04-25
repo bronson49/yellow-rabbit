@@ -115,10 +115,17 @@ const borderWrapperFunc = function () {
     }
 
     // validation
-    const im = new Inputmask("+38 999-999-99-99");
-    im.mask('input[name=phone]');
+    // const im = new Inputmask("+38999-999-99-99");
+    // im.mask('input[name=phone]');
+
+    $('input[name=phone]').inputmask({
+        "mask": "+38sss-ss-ss-ss",
+        definitions: {'s': {validator: "[0-9]"}}
+    });
+
 
     // ajax
+    const regExp = /\S+@\S+\.\S+/;
     $('.requestCall').submit(function () {
         $.ajax({
             type: "GET",
@@ -133,18 +140,27 @@ const borderWrapperFunc = function () {
         return false;
     });
     $('.appointment-form').submit(function () {
-        $.ajax({
-            type: "GET",
-            url: "",
-            data: $(this).serialize()
-        }).done(function () {
-            $('#makePhoto').append('<p class="ajax-msg">Спасибо, мы с вами скоро свяжемся!</p>');
-            setTimeout(function () {
-                $('.ajax-msg').remove();
-                closePhotoForm();
-            },3000)
-        });
-        return false;
+         let mailValid = $(this).find('#mail');
+
+         if ( !regExp.test(mailValid[0].value) ) {
+             $(mailValid).css({'border': '2px solid red'});
+             return false;
+         } else {
+             $(mailValid).css({'border': '2px solid black'});
+
+             $.ajax({
+                 type: "GET",
+                 url: "",
+                 data: $(this).serialize()
+             }).done(function () {
+                 $('#makePhoto').append('<p class="ajax-msg">Спасибо, мы с вами скоро свяжемся!</p>');
+                 setTimeout(function () {
+                     $('.ajax-msg').remove();
+                     closePhotoForm();
+                 },3000)
+             });
+             return false;
+         }
     });
 
 };

@@ -383,6 +383,13 @@
     font-size: 14px;
     height: 54px;
   }
+  .border-wrapper-call{
+    &:hover{
+      span {
+        display: none;
+      }
+    }
+  }
   .appointment-form{
     flex-direction: column;
     &-right{
@@ -400,6 +407,13 @@
       label {
         margin: 0 10px 30px;
       }
+    }
+  }
+  .requestCall{
+    margin: 0;
+    input[name=phone]{
+      margin: 5px 25px 0 5px;
+      width: 170px;
     }
   }
 }
