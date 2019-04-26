@@ -2,6 +2,7 @@
 
   &-head{
     padding: 25px 35px 0;
+    border-top: 1px solid #141201;
   }
   &-body{
 
@@ -10,7 +11,7 @@
 
     &-item{
 
-      margin: 0 50px;
+      margin: 0 50px ;
       h3 {
         font-size: 20px;
         text-transform: uppercase;
@@ -74,7 +75,7 @@
 }
 .left-question{
   grid-column: 1 / 1;
-  grid-row: 1 / 3;
+  grid-row: 1 / 4;
 }
 
 @media all and (max-width: 450px) {

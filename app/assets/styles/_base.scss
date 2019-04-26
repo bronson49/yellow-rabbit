@@ -55,7 +55,8 @@ a {
     display: none!important;
   }
   .container-big-auto{
-   // height: auto;
+    height: auto;
+    min-height: calc(100vh - 130px);
   }
 }
 @media all and (max-width: 450px){
