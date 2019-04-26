@@ -1,7 +1,7 @@
 .about {
   height: 100%;
   &-head {
-    padding: 35px 35px 0;
+    padding: 25px 35px;
   }
   &-body{
     display: grid;
@@ -142,11 +142,25 @@
 }
 
 @media all and  (max-width: 1370px){
+  .about-head{
+    padding: 10px 35px;
+  }
+  .about-body {
+    grid-auto-rows: minmax(160px ,auto);
+  }
   .about-item5{
     grid-row: 6 / 8;
   }
   .about-item6{
     grid-row: 5 / 8;
+  }
+  .about-item-text p{
+    width: 80%;
+    &:before {
+      transform: scale(.4);
+      top: -70px;
+      left: -65px;
+    }
   }
 }
 

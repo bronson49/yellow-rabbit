@@ -54,7 +54,7 @@ const borderWrapperFunc = function () {
 
     function changePage(i) {
         clearPageList();
-        $('html, body').stop().animate({ scrollTop : sectionsOffset[i]-90 }, 800);
+        $('html, body').stop().animate({ scrollTop : sectionsOffset[i]-65 }, 800);
         $('.border-page-list li')[i].classList.add('page-active');
     }
     function clearPageList() {

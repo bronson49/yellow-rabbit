@@ -70,23 +70,34 @@
 }
 
 @media all and (max-width: 1700px) {
-  .services-head{
-    padding: 0 35px 0;
-  }
+
   .services-list {
     margin: 20px 20px 5px;
+    &-item img{
+      width: 30px;
+    }
   }
   .services-item-text{
     padding: 0 15px;
     & h3{
       max-width: 240px;
       min-height: 50px;
+      font-size: 16px;
     }
     & p{
       margin: 15px 0 5px;
     }
   }
 }
+@media all and (max-width: 1370px){
+  .services-item-text{
+    padding: 0 0 0 15px;
+    & h3 {
+
+    }
+  }
+}
+
 
 @media all and (max-width: 450px) {
   .services-head {

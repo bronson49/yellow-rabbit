@@ -29,7 +29,8 @@ a {
   color: #000000;
 }
 .container {
-  margin: 65px 90px;
+ // margin: 65px 90px ;
+  margin: 0 90px ;
   height: calc(100vh - 130px);
 }
 .container-big {
@@ -52,6 +53,9 @@ a {
 @media all and (min-width: 451px){
   .desktop-none {
     display: none!important;
+  }
+  .container-big-auto{
+   // height: auto;
   }
 }
 @media all and (max-width: 450px){
