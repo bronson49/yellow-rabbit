@@ -31,7 +31,7 @@
   &-item-img{
     border-right: 2px solid black;
     border-bottom: 2px solid black;
-    padding: 50px;
+    padding: 10px;
     img {
       width: 100%;
     }
@@ -108,7 +108,7 @@
   transform: rotate(180deg);
 }
 
-@media all and  (max-width: 1370px){
+@media all and  (max-width: 1700px){
   .speak-head {
     padding: 10px 35px;
   }
@@ -116,7 +116,12 @@
     font-size: 18px;
     &:before{
       transform: scale(0.6);
+      top: -65px;
+      left: -70px;
     }
+  }
+  .speak-item-img img{
+    width: 420px;
   }
 }
 @media all and  (max-width: 450px){

@@ -1,5 +1,6 @@
 
 const borderWrapperFunc = function () {
+
     $('#makePhoto').click(function (event) {
         event.stopPropagation();
         $(this).removeClass('border-wrapper-nonActive');
@@ -36,6 +37,10 @@ const borderWrapperFunc = function () {
         sectionsOffset.push($(this).offset().top);
     });
     sectionsLength = sectionsOffset.length; // получить кол-во блоков
+    for (i = 0; i < sectionsLength-1; i++){ // сделать точечки в левой рамочке
+        let li = document.createElement('LI');
+        $('.border-page-list').append(li);
+    }
 
 
     $('.scrollUp').click(function () {

@@ -48,7 +48,10 @@ a {
     background-color: #555;
   }
 }
-
+.container-point{
+  margin: 0;padding: 0;
+  height: 0;width: 0;
+}
 
 @media all and (min-width: 451px){
   .desktop-none {
