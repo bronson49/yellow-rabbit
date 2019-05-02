@@ -103,6 +103,59 @@
   transform: rotate(135deg);
 }
 
+
+.family-popup{
+  &-wrapper{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0,0.8);
+    z-index: 20;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  &-close{
+    position: relative;
+    height: 50px;
+    cursor: pointer;
+    &:before, &:after{
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 5px;
+      background: white;
+      right: 100px;
+      top: 20px;
+      transform: rotate(45deg);
+      border-radius: 2px;
+    }
+    &:after{
+      transform: rotate(-45deg);
+    }
+  }
+  &-prev, &-next{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    left: 20px;
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  &-next{
+    left: auto;
+    right: 50px;
+    transform: rotate(-135deg);
+  }
+}
+#familyPopup{
+  width: 70%;
+  margin: 0 auto;
+}
 @media all and (max-width: 450px){
   .family-photo-head h2 {
     font-size: 18px;

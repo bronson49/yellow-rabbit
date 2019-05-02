@@ -7,17 +7,14 @@ const familyPhotoFunc = function () {
         let photoListWidth = $(photoList).width();
         let maxSlide = photoListWidth - window.innerWidth + 190;
         let stepClick = Math.floor(maxSlide/5);
+        let canPopUp = true;
 
         $('#family-slide').slider({
             value : 0,
             min : 0,
             max : maxSlide,
             step : 1,
-            create: function( event, ui ) {
-
-            },
             slide: function( event, ui ) {
-                // console.log(ui.value);
                 $(photoList).css({'transform':'translateX(-'+ui.value+'px)'});
             }
         });
@@ -37,9 +34,11 @@ const familyPhotoFunc = function () {
 
         // draggable start
         photoList[0].onmousedown = function (e) {
-            const _translateX =  parseInt($(photoList).css('transform').split(',')[4]);
-            const shiftX = e.pageX - _translateX;
+            let _translateX =  parseInt($(photoList).css('transform').split(',')[4]);
+            let shiftX = e.pageX - _translateX;
+
             document.onmousemove = function(e) {
+                canPopUp = false ;
                 let diff = shiftX - e.pageX;
                 if (diff < 0) {
                     $(photoList).css({'transform':'translateX(0px)'});
@@ -51,20 +50,41 @@ const familyPhotoFunc = function () {
                 }
 
                 $(photoList).css({'transform':'translateX('+ -diff +'px)'});
-
+                $('#family-slide').slider('value', diff);
             };
 
             document.onmouseup = function() {
-                $('#family-slide').slider('value', -_translateX);
+               // $('#family-slide').slider('value', -_translateX);
                 document.onmousemove = null;
+                setTimeout(()=> canPopUp = true ,0);
             };
 
         };
         photoList[0].ondragstart = function() {
             return false;
         };
-    }, 2000);
 
+        // init popup slider
+        $('.family-photo-list img').each(function () {
+            let photo = document.createElement('IMG');
+            photo.src = $(this).attr('src');
+            $('#familyPopup').append(photo);
+        });
+        $('#familyPopup').slick({
+            prevArrow: $('.family-popup-prev'),
+            nextArrow: $('.family-popup-next'),
+        });
+
+        $('.family-photo-list li').click(function () {
+            if (!canPopUp) return;
+            $('#familyPopup').slick( 'slickGoTo', $(this).index() );
+            $('.family-popup-wrapper').css({'display':'block'});
+        });
+        $('.family-popup-close').click(function () {
+            $('.family-popup-wrapper').css({'display':'none'});
+        });
+
+    }, 2000);
 
 
 };
