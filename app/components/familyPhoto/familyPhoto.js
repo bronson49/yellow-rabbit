@@ -33,7 +33,38 @@ const familyPhotoFunc = function () {
             $('#family-slide').slider('value', val-stepClick);
             $(photoList).css({'transform':'translateX(-'+(val-stepClick)+'px)'});
         });
+
+
+        // draggable start
+        photoList[0].onmousedown = function (e) {
+            const _translateX =  parseInt($(photoList).css('transform').split(',')[4]);
+            const shiftX = e.pageX - _translateX;
+            document.onmousemove = function(e) {
+                let diff = shiftX - e.pageX;
+                if (diff < 0) {
+                    $(photoList).css({'transform':'translateX(0px)'});
+                    return
+                }
+                if (diff > maxSlide) {
+                    $(photoList).css({'transform':'translateX('+ -maxSlide +'px)'});
+                    return
+                }
+
+                $(photoList).css({'transform':'translateX('+ -diff +'px)'});
+
+            };
+
+            document.onmouseup = function() {
+                $('#family-slide').slider('value', -_translateX);
+                document.onmousemove = null;
+            };
+
+        };
+        photoList[0].ondragstart = function() {
+            return false;
+        };
     }, 2000);
+
 
 
 };
