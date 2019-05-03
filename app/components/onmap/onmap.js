@@ -295,7 +295,7 @@ const onmapFunc = function () {
         let markerCluster = new MarkerClusterer(map, markers);
 
         slider.on('beforeChange',  function (event, slick, currentSlide, nextSlide) {
-            if(nextSlide  != 0) {
+            if(nextSlide  != 0 && nextSlide  != 4) {
                 getDirection(locations[~~nextSlide - 1].coord)
             }else {
                 console.log(1)

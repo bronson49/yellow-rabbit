@@ -17,6 +17,21 @@
 .family-photo-slide{
   height: 75%;
   overflow: hidden;
+  position: relative;
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 98%;
+    background: $background;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+  &:after{
+    left: auto;
+    right: 0;
+  }
 }
 .family-photo-slider-bar{
   margin: 0 125px 0 50px;

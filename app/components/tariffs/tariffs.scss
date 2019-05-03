@@ -240,7 +240,10 @@
     font-size: 16px;
   }
   .offers-item-list ul {
-    margin: 25px 5px 20px 50px;
+    margin: 20px 5px 20px 50px;
+    li {
+      margin: 20px 0;
+    }
   }
   .tariffs-offers-item{
     width: 260px;
@@ -274,7 +277,7 @@
 
 @media all and  (max-width: 450px) {
   .tariffs-head{
-    padding: 0 20px;
+    padding: 0 20px 20px;
   }
   .tariffs-offers{
     margin: 0 20px;

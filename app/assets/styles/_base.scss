@@ -8,6 +8,12 @@ body {
   font-family: Montserrat-Regular, sans-serif;
   background: $background;
   color: #000000;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 }
 ul {
   padding: 0;margin: 0;
@@ -67,7 +73,7 @@ a {
     display: none!important;
   }
   .container{
-    margin: 50px 0;
+    margin: 20px 0;
     height: calc(100vh - 50px);
   }
   .container-big {

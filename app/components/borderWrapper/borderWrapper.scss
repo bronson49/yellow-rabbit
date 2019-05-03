@@ -349,11 +349,18 @@
   }
 }
 @media all and (max-width: 1440px){
-  .appointment-form-left input, .appointment-form-right textarea {
+  .appointment-form-left input{
     width: 165px;
+  }
+  .appointment-form-right textarea {
+    width: 180px;
+    margin-left: 10px;
   }
   .appointment-form-left label {
     width: 250px;
+  }
+  .requestCall{
+    margin: 0 10px;
   }
 }
 

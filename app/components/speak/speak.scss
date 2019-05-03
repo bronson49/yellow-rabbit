@@ -120,13 +120,16 @@
       left: -70px;
     }
   }
-  .speak-item-img img{
-    width: 420px;
+  .speak-item-img{
+    padding: 5px;
+    img{
+      width: 420px;
+    }
   }
 }
 @media all and  (max-width: 450px){
   .speak-head{
-    padding: 5px 20px;
+    padding: 20px 20px 15px;
     border-top: 2px solid #333;
     border-bottom: none;
   }
@@ -135,7 +138,6 @@
     padding: 0 20px;
   }
   .speak-item-img {
-    padding: 5px;
     border: none!important;
     img {
       width: 100%;

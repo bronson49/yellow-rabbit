@@ -31,7 +31,7 @@ const tariffsFunc = function () {
             prevArrow: $('.tariffs-prev'),
             nextArrow: $('.tariffs-next'),
             dots: false ,
-            initialSlide: 2,
+           // initialSlide: 2,
         });
     }
 

@@ -68,6 +68,9 @@
 .onmap-next{
   transform: rotate(180deg);
 }
+.onmap-enter{
+  width: 100%;
+}
 .slick-dots {
   bottom: -65px;
   li {
@@ -90,7 +93,7 @@
 
 @media all and (max-width: 450px){
   .onmap-head{
-    padding: 10px 20px;
+    padding: 20px;
     position: static;
   }
   .onmap-slider{
