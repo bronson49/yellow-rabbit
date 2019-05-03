@@ -15,7 +15,7 @@
   }
   &-slider{
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 100px;
     border: 2px solid black;
     width: 400px;
@@ -91,6 +91,17 @@
   background: #FED731;
 }
 
+@media all and (max-width: 1500px){
+  .onmap-slider{
+    top: 10px;
+  }
+  .slick-dotted.slick-slider, .onmap-slider-controls {
+    margin: 0;
+  }
+  .slick-dots {
+    bottom: -35px;
+  }
+}
 @media all and (max-width: 450px){
   .onmap-head{
     padding: 20px;

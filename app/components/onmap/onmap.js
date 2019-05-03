@@ -262,18 +262,18 @@ const onmapFunc = function () {
         let currPoi;
         let companyPoi = {lat: 50.444844, lng: 30.6340953}
         let locations = [
-            {coord: {lat: 50.4561685, lng: 30.610702}, icon: 'assets/images/metro_darnica.png'},
+            {coord: {lat: 50.3987803, lng: 30.6342189}, icon: 'assets/images/metro_darnica.png'},
             {coord: {lat: 50.4598726, lng: 30.6281441}, icon: 'assets/images/metro_chernig.png'},
-            {coord: {lat: 50.4514196, lng: 30.5980362}, icon: 'assets/images/metro_leftSide.png'},
+            {coord: {lat: 50.4269691, lng: 30.5378012}, icon: 'assets/images/metro_leftSide.png'},
 
 
-        ]
+        ];
         let map = new google.maps.Map(document.getElementById('map'), {
             center: centerMap,
             zoom: 14,
             styles: styles,
-            minZoom: 14,
-            maxZoom: 15
+            minZoom: 13,
+            maxZoom: 15,
         });
         let marker = new google.maps.Marker({
             position: companyPoi,
@@ -295,13 +295,17 @@ const onmapFunc = function () {
         let markerCluster = new MarkerClusterer(map, markers);
 
         slider.on('beforeChange',  function (event, slick, currentSlide, nextSlide) {
+
             if(nextSlide  != 0 && nextSlide  != 4) {
-                getDirection(locations[~~nextSlide - 1].coord)
+                getDirection(locations[~~nextSlide - 1].coord);
+                // if (nextSlide  == 3) {
+                //     map.setZoom(13);
+                // }
             }else {
-                console.log(1)
+
                 dirDisp.setMap(null);
             }
-        })
+        });
 
         let i = {
             path: "M 0,-4 0,1",
@@ -345,13 +349,13 @@ const onmapFunc = function () {
             directionsService.route(wayOpt, function (result, status) {
                 if (status == 'OK') {
                     dirDisp.setDirections(result);
-                    showSteps(result);
+                    (result);
                 }
             });
         }
 
         function showSteps(directionResult) {
-            console.log(directionResult)
+            // console.log(directionResult)
         }
 
     }
