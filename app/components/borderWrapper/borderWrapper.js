@@ -114,8 +114,8 @@ const borderWrapperFunc = function () {
     }
 
     function stopScroll(e) {
-        let all = this.scrollHeight - (this.offsetHeight + this.scrollTop);
-        if (all !==0 && e.deltaY > 0){
+        let all = this.scrollHeight - (this.offsetHeight + this.scrollTop );
+        if (all >50 && e.deltaY > 0){
             e.stopPropagation();
         }else if(this.scrollTop !==0 && e.deltaY < 0){
             e.stopPropagation();
