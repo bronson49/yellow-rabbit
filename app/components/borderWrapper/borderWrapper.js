@@ -47,7 +47,7 @@ const borderWrapperFunc = function () {
             let i = $(this).index();
             changePage(i);
         });
-    }, 1500);
+    }, 2200);
 
 
     $('.scrollUp').click(function () {
