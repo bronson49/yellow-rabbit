@@ -33,14 +33,21 @@ const borderWrapperFunc = function () {
         sectionsLength= 0, // кол-во блоков
         canScroll = true;
 
-    $(sections).each(function () { // получить отступы всех блоков
-        sectionsOffset.push($(this).offset().top);
-    });
-    sectionsLength = sectionsOffset.length; // получить кол-во блоков
-    for (i = 0; i < sectionsLength-1; i++){ // сделать точечки в левой рамочке
-        let li = document.createElement('LI');
-        $('.border-page-list').append(li);
-    }
+
+    setTimeout(function () {
+        $(sections).each(function () { // получить отступы всех блоков
+            sectionsOffset.push($(this).offset().top);
+        });
+        sectionsLength = sectionsOffset.length; // получить кол-во блоков
+        for (i = 0; i < sectionsLength-1; i++){ // сделать точечки в левой рамочке
+            let li = document.createElement('LI');
+            $('.border-page-list').append(li);
+        }
+        $('.border-page-list li').click(function () {
+            let i = $(this).index();
+            changePage(i);
+        });
+    }, 1500);
 
 
     $('.scrollUp').click(function () {
@@ -52,10 +59,7 @@ const borderWrapperFunc = function () {
         wheelDown(yOffset);
     });
     
-    $('.border-page-list li').click(function () {
-        let i = $(this).index();
-        changePage(i);
-    });
+
 
     function changePage(i) {
         clearPageList();
