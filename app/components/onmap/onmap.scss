@@ -101,9 +101,13 @@
   .slick-dots {
     bottom: -35px;
   }
+  .onmap-head{
+    display: none;
+  }
 }
 @media all and (max-width: 450px){
   .onmap-head{
+    display: block;
     padding: 20px;
     position: static;
   }

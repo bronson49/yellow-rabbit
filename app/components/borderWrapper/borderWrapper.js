@@ -47,7 +47,7 @@ const borderWrapperFunc = function () {
             let i = $(this).index();
             changePage(i);
         });
-    }, 3000);
+    }, 4000);
 
 
     $('.scrollUp').click(function () {
@@ -151,7 +151,7 @@ const borderWrapperFunc = function () {
     $('.appointment-form').submit(function () {
          let mailValid = $(this).find('#mail');
 
-         if ( !regExp.test(mailValid[0].value) ) {
+         if (mailValid[0].value!=='' && !regExp.test(mailValid[0].value) ) {
              $(mailValid).css({'border': '2px solid red'});
              return false;
          } else {
