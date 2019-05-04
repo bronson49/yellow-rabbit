@@ -58,19 +58,23 @@ const borderWrapperFunc = function () {
         let yOffset = window.pageYOffset;
         wheelDown(yOffset);
     });
-    
+    document.body.onkeydown = function(e){
+        if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+
+        let yOffset = window.pageYOffset;
+        let _code = e.code;
+        if (_code === 'Space'|| _code === 'ArrowDown'){
+            wheelDown(yOffset);
+            return false
+        }
+        if (_code === 'ArrowUp'){
+            wheelUp(yOffset);
+            return false
+        }
+
+    };
 
 
-    function changePage(i) {
-        clearPageList();
-        $('html, body').stop().animate({ scrollTop : sectionsOffset[i]-65 }, 800);
-        $('.border-page-list li')[i].classList.add('page-active');
-    }
-    function clearPageList() {
-        $('.page-active').each(function () {
-            $(this).removeClass('page-active')
-        });
-    }
 
     document.body.addEventListener('wheel', handleScroll, { passive: false } );  // отменить пассивность ивента
 
@@ -105,7 +109,16 @@ const borderWrapperFunc = function () {
             }
         }
     }
-
+    function changePage(i) {
+        clearPageList();
+        $('html, body').stop().animate({ scrollTop : sectionsOffset[i]-65 }, 800);
+        $('.border-page-list li')[i].classList.add('page-active');
+    }
+    function clearPageList() {
+        $('.page-active').each(function () {
+            $(this).removeClass('page-active')
+        });
+    }
 
     // отменяем прокрутку над блоками с прокруткой
     let scrollBlock = document.querySelectorAll('.container-big');
