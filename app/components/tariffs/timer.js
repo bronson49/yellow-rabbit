@@ -20,9 +20,9 @@ const timerFunc = function () {
 
     let mainTimer = setInterval(function () {
         stockLeft = stockLeft - 1000;
-        hrLeft.innerHTML = Math.floor(stockLeft/3600000) ;
-        minLeft.innerHTML = Math.floor((stockLeft%3600000)/60000);
-        secLeft.innerHTML = Math.floor(((stockLeft%3600000)%60000)/1000);
+        hrLeft.innerHTML = ('0' + Math.floor(stockLeft/3600000) ).slice(-2)  ;
+        minLeft.innerHTML = ('0' + Math.floor((stockLeft%3600000)/60000)).slice(-2);
+        secLeft.innerHTML = ('0' + Math.floor(((stockLeft%3600000)%60000)/1000)).slice(-2);
         if (stockLeft < 0){
             $('.active-tariff').css({'cursor':'not-allowed'}).find('.offers-make-order').remove();
             $('.offers-item-timer p').html('Акция закончилась.');
