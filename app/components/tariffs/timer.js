@@ -1,7 +1,7 @@
 
 const timerFunc = function () {
     let timeNow = new Date();
-    let stockHours = 15;  // длительность акции, ч
+    let stockHours = 7;  // длительность акции, ч
     let stockMs = stockHours * 60 * 60 * 1000;  // длительность акции, мс
     let localInitTime = localStorage.getItem('firstTime');
 
