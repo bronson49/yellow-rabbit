@@ -258,19 +258,19 @@ const onmapFunc = function () {
         });
         let travelMode = 'DRIVING';
         let transitOptions = ['RAIL', 'SUBWAY', 'BUS', 'TRAM']
-        let centerMap = {lat: 50.4486878, lng:30.5980362}
+        let centerMap = {lat: 50.4330878, lng:30.5920362}
         let currPoi;
         let companyPoi = {lat: 50.444844, lng: 30.6340953}
         let locations = [
-            {coord: {lat: 50.3987803, lng: 30.6342189}, icon: 'assets/images/metro.png'},
-            {coord: {lat: 50.4598726, lng: 30.6281441}, icon: 'assets/images/metro.png'},
-            {coord: {lat: 50.4269691, lng: 30.5378012}, icon: 'assets/images/metro.png'},
+            {coord: {lat: 50.3987803, lng: 30.6342189}, icon: 'assets/images/metro_poznyaki.png'},
+            {coord: {lat: 50.4598726, lng: 30.6281441}, icon: 'assets/images/metro_chernigov.png'},
+            {coord: {lat: 50.4269691, lng: 30.5378012}, icon: 'assets/images/metro_goloseev.png'},
 
 
         ];
         let map = new google.maps.Map(document.getElementById('map'), {
             center: centerMap,
-            zoom: 14,
+            zoom: 13,
             styles: styles,
             minZoom: 13,
             maxZoom: 15,

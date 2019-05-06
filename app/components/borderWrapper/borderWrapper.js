@@ -128,7 +128,7 @@ const borderWrapperFunc = function () {
 
     function stopScroll(e) {
         let all = this.scrollHeight - (this.offsetHeight + this.scrollTop );
-        if (all >50 && e.deltaY > 0){
+        if (all !==0 && e.deltaY > 0){
             e.stopPropagation();
         }else if(this.scrollTop !==0 && e.deltaY < 0){
             e.stopPropagation();
@@ -140,15 +140,17 @@ const borderWrapperFunc = function () {
     // const im = new Inputmask("+38999-999-99-99");
     // im.mask('input[name=phone]');
 
-    $('input[name=phone]').inputmask({
-        "mask": "+38sss-ss-ss-ss",
-        definitions: {'s': {validator: "[0-9]"}}
+    $('input[name=phone]').inputmask('*{16,}',{
+        "mask": "+38sss-sss-ss-ss",
+        definitions: {'s': {validator: "[0-9]"}},
+        clearIncomplete: true,
     });
 
 
     // ajax
     const regExp = /\S+@\S+\.\S+/;
     $('.requestCall').submit(function () {
+       // console.log($(this).find('input').val().length);
         $.ajax({
             type: "GET",
             url: "",
