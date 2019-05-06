@@ -298,12 +298,9 @@ const onmapFunc = function () {
 
             if(nextSlide  != 0 && nextSlide  != 4) {
                 getDirection(locations[~~nextSlide - 1].coord);
-                // if (nextSlide  == 3) {
-                //     map.setZoom(13);
-                // }
             }else {
-
-                dirDisp.setMap(null);
+                getDirection(companyPoi);
+               // dirDisp.setMap(null);
             }
         });
 

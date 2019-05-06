@@ -191,4 +191,21 @@
     border-right: 1px solid #333;
     border-left: 1px solid #333;
   }
+  #familyPopup{
+    margin: 50% auto;
+  }
+  .family-popup-next, .family-popup-prev{
+    top: 65%;
+  }
+  .family-popup-prev{
+    left: 120px;
+  }
+  .family-popup-next{
+    right: 120px;
+  }
+  .family-popup-close {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+  }
 }

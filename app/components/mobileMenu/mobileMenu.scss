@@ -87,3 +87,25 @@
     }
   }
 }
+
+@media all and (max-width: 450px) {
+  .border-wrapper-call{
+    height: 40px;
+  }
+  .border-wrapper-photo{
+    background: #FED731;
+    color: #141201;
+    font-size: 14px;
+    height: 40px;
+  }
+  .appointment-form-submit input {
+    height: 40px;
+  }
+  .requestCall input[name=phone]{
+    padding: 0;
+    height: 40px;
+  }
+  .menu-list-item:last-child {
+    padding: 0;
+  }
+}

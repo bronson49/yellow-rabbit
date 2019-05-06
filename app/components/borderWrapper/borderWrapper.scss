@@ -64,8 +64,10 @@
   transition: .4s;
 }
 .border-wrapper-nonActive{
-  background: #141201;
-  color: white;
+  //background: #141201;
+  //color: white;
+  background: #fed731;
+  color: #141201;
 }
 
 
@@ -384,12 +386,7 @@
       margin: 0 15px;
     }
   }
-  .border-wrapper-photo{
-    background: #FED731;
-    color: #141201;
-    font-size: 14px;
-    height: 54px;
-  }
+
   .border-wrapper-call{
     &:hover{
       span {
