@@ -107,7 +107,7 @@
   }
   &-timer {
     position: absolute;
-    top: 120%;
+    bottom: -45px;
     left: 0;
     width: 100%;
    // background: #000000;
@@ -306,7 +306,18 @@
   .offers-item-name {
     font-size: 15px;
   }
+  .offers-item-timer{
+    position: static;
+    background: $background;
+    p {
+      font-size: 14px;
+    }
+  }
   .tariffs-offers-item.active-tariff:before{
     content: none;
   }
+  .tariffs-slider-controls{
+    margin-top: 0;
+  }
+
 }
