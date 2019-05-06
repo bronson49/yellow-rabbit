@@ -87,6 +87,14 @@ const familyPhotoFunc = function () {
     }, 2000);
 
 
+    if (navigator.userAgent.search("Firefox") > 0) {
+        $('.family-photo-list li').each(function () {
+            let childWidth = $(this).find('img').width();
+            $(this).css({'width': childWidth + 60});
+        });
+    }
+
+
 };
 
 export {familyPhotoFunc}
