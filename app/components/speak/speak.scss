@@ -11,6 +11,7 @@
     &-item{
       display: flex;
       transition: .3s;
+      height: calc((100vh - 220px)/2);
       &:hover{
         background: #fed731;
         .speak-item-text{
@@ -33,7 +34,8 @@
     border-bottom: 2px solid black;
     padding: 10px;
     img {
-      width: 100%;
+     // width: 100%;
+      height: 100%;
     }
   }
   &-item-text{
@@ -112,19 +114,19 @@
   .speak-head {
     padding: 10px 35px;
   }
+  .speak-body-item{
+    height: calc((100vh - 190px)/2);
+  }
   .speak-item-text .speak-item-testimonial{
     font-size: 18px;
     &:before{
-      transform: scale(0.6);
+      transform: scale(0.4);
       top: -65px;
       left: -70px;
     }
   }
   .speak-item-img{
     padding: 5px;
-    img{
-      width: 420px;
-    }
   }
 }
 @media all and  (max-width: 450px){
@@ -136,6 +138,7 @@
   .speak-body-item {
     flex-direction: column;
     padding: 0 20px;
+    height: auto;
   }
   .speak-item-img {
     border: none!important;
