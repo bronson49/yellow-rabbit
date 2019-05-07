@@ -90,4 +90,7 @@ textarea { resize: none; }
     font-size: 20px;
     letter-spacing: 1px;
   }
+  input {
+    -webkit-appearance: none; // for iphone
+  }
 }
