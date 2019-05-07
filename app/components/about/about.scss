@@ -125,9 +125,12 @@
   height: 40px;
   padding: 10px 0;
   background: #141201;
+ // background: green;
   text-align: center;
   color: #F4F4F4;
   display: block;
+
+  z-index: 6;
 }
 .yellow{
   opacity: 1!important;
@@ -191,7 +194,8 @@
     position: relative;
     width: auto;
     height: 100%;
-    padding: 50px 15px 30px 50px;
+   // padding: 50px 15px 30px 50px;
+    padding: 10px 20px 20px;
     display: block;
     overflow-y: scroll;
     p {
@@ -199,9 +203,11 @@
       font-size: 16px;
       line-height: 45px;
       font-weight: 600;
-      padding-bottom: 20px;
+      margin-bottom: 20px;
+      overflow: hidden;
 
       &:before{
+        content: none;
         transform: scale(.6);
         top: -70px;
         left: -60px;
@@ -209,10 +215,10 @@
     }
     &.show-more{
       p {
-        height: 85%;
-        column-width: 150px;
-        touch-action: pan-y;
-        pointer-events: none;
+        height: 80%;
+       // column-width: 150px;
+       // touch-action: pan-y;
+       // pointer-events: none;
       }
     }
   }
