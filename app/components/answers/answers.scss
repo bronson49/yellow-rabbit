@@ -100,4 +100,7 @@
       max-height: 500px;
     }
   }
+  .answers-body-question h4:after, .answers-body-question h4:before{
+    top: 50%;
+  }
 }

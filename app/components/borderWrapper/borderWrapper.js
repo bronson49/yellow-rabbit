@@ -141,9 +141,10 @@ const borderWrapperFunc = function () {
     // im.mask('input[name=phone]');
 
     $('input[name=phone]').inputmask('*{16,}',{
-        "mask": "+38sss-sss-ss-ss",
+        "mask": "+380ss-sss-ss-ss",
         definitions: {'s': {validator: "[0-9]"}},
         clearIncomplete: true,
+        clearMaskOnLostFocus: false,
     });
 
 

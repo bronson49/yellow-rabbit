@@ -76,8 +76,16 @@
     margin:0 30px 0;
     text-align: center;
     border: 2px solid #333333;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 90vh;
     &-item{
       padding: 10px 0;
+      &:nth-last-child(2){
+        padding: 0;
+        margin-bottom: -19px;
+      }
       a {
         font-size: 13px;
         font-weight: 600;
@@ -110,6 +118,7 @@
   .border-wrapper-appointment{
     width: 102%;
     bottom: 98%;
+    height: 85vh;
   }
   .appointment-form-submit input {
     height: 40px;
@@ -117,11 +126,35 @@
     border: none;
     border-radius: 0;
   }
+  .appointment-form{
+    flex-direction: column;
+    &-right{
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      height: 200px;
+      textarea {
+        width: 85%;
+        margin: 5px auto;
+      }
+    }
+    &-left{
+      padding-top: 30px;
+      label {
+        margin: 0 10px 30px;
+      }
+    }
+  }
   .requestCall input[name=phone]{
-    padding: 0;
+    padding: 0 5px 0 10px;
     height: 40px;
+    margin: 5px 25px 0 5px;
+    width: 170px;
   }
   .menu-list-item:last-child {
     padding: 0;
+  }
+  .family-photo-slide:after, .family-photo-slide:before {
+    content: none;
   }
 }
