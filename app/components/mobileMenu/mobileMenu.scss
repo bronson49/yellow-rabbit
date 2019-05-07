@@ -95,15 +95,27 @@
 @media all and (max-width: 450px) {
   .border-wrapper-call{
     height: 40px;
+    border-left: none;
+    border-right: none;
   }
   .border-wrapper-photo{
     background: #FED731;
     color: #141201;
     font-size: 14px;
     height: 40px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  .border-wrapper-appointment{
+    width: 101%;
+    bottom: 98%;
   }
   .appointment-form-submit input {
     height: 40px;
+    border-bottom-width: 0;
+    outline: none;
+    border-radius: 0;
   }
   .requestCall input[name=phone]{
     padding: 0;
