@@ -274,6 +274,9 @@ const onmapFunc = function () {
             styles: styles,
             minZoom: 13,
             maxZoom: 15,
+            fullscreenControl: false,
+            mapTypeControl: false,
+            streetViewControl:false,
         });
         let marker = new google.maps.Marker({
             position: companyPoi,

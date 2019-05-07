@@ -212,6 +212,7 @@
         height: 85%;
         column-width: 150px;
         touch-action: pan-y;
+        pointer-events: none;
       }
     }
   }

@@ -299,6 +299,9 @@
   }
   .tariffs-offers{
     margin: 0 20px;
+    &-item{
+      min-height: 400px;
+    }
   }
   .offers-item-price {
     font-size: 40px;
