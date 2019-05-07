@@ -108,13 +108,13 @@
     border-bottom: none;
   }
   .border-wrapper-appointment{
-    width: 101%;
+    width: 102%;
     bottom: 98%;
   }
   .appointment-form-submit input {
     height: 40px;
-    border-bottom-width: 0;
-    outline: none;
+    outline: 2px solid black;
+    border: none;
     border-radius: 0;
   }
   .requestCall input[name=phone]{
