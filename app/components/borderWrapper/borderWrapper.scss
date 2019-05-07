@@ -370,6 +370,16 @@
     margin: 0 10px;
   }
 }
+@media all and (max-width: 1350px){
+  .appointment-form-right {
+    flex-direction: column;
+    textarea {
+      width: 200px;
+      margin-left: 0;
+    }
+  }
+}
+
 
 @media all and (max-width: 450px){
   .border-wrapper-top{
