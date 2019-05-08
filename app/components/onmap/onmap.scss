@@ -29,13 +29,16 @@
       margin: 40px 0;
     }
     &-controls{
-      margin-top: 30px;
+     // margin-top: 30px;
       height: 40px;
       border-top: 2px solid black;
       display: flex;
       align-items: center;
       padding: 0 20px;
       justify-content: space-between;
+    }
+    & .slick-dotted.slick-slider {
+      margin-bottom: 0;
     }
   }
   &-text {
@@ -72,7 +75,7 @@
   width: 100%;
 }
 .slick-dots {
-  bottom: -65px;
+  bottom: -35px;
   li {
     button{
       &:before{
