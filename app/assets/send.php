@@ -5,21 +5,21 @@ $userphone = null;
 $comment = null;
 $info = null;
 
-$sendto = "yr.fotostudio@gmail.com musevich@gmail.com";
-if(isset($_GET['name']) > 1) {
-    $username = $_GET['name'];
+$sendto = "yr.fotostudio@gmail.com, musevich@gmail.com";
+if(isset($_POST['name']) > 1) {
+    $username = $_POST['name'];
 }
-if(isset($_GET['email']) > 1) {
-    $usermail = $_GET['mail'];
+if(isset($_POST['email']) > 1) {
+    $usermail = $_POST['mail'];
 }
-if(isset($_GET['phone']) > 1) {
-    $userphone = $_GET['phone'];
+if(isset($_POST['phone']) > 1) {
+    $userphone = $_POST['phone'];
 }
-if(isset($_GET['messg']) > 1) {
-    $comment = $_GET['messg'];
+if(isset($_POST['messg']) > 1) {
+    $comment = $_POST['messg'];
 }
-if(isset($_GET['info']) > 1) {
-    $info = $_GET['info'];
+if(isset($_POST['info']) > 1) {
+    $info = $_POST['info'];
 }
 // Формирование заголовка письма
 $subject  = "Заказ сайта лендинг Yellow Rabbit";
@@ -45,7 +45,7 @@ if($comment != null) {
 if($info != null) {
     $msg .="<div>Описание:".$info."</div>";
 }
-$msg .= $letter;
+
 $msg .= "</body></html>";
 
 
