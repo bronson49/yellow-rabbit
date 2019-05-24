@@ -153,8 +153,8 @@ const borderWrapperFunc = function () {
     $('.requestCall').submit(function () {
        // console.log($(this).find('input').val().length);
         $.ajax({
-            type: "GET",
-            url: "",
+            type: "POST",
+            url: "/photofamily/send.php",
             data: $(this).serialize()
         }).done(function () {
             $('#makeCall').append('<p class="ajax-msg">Спасибо, мы с вами скоро свяжемся!</p>');
@@ -174,8 +174,8 @@ const borderWrapperFunc = function () {
              $(mailValid).css({'border': '2px solid black'});
 
              $.ajax({
-                 type: "GET",
-                 url: "",
+                 type: "POST",
+                 url: "/photofamily/send.php",
                  data: $(this).serialize()
              }).done(function () {
                  $('#makePhoto').append('<p class="ajax-msg">Спасибо, мы с вами скоро свяжемся!</p>');

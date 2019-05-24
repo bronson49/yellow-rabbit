@@ -12,8 +12,8 @@ const tariffsFunc = function () {
     $('.order-tariff').submit(function () {
         let parent = $(this).closest('.tariffs-offers-item');
         $.ajax({
-            type: "GET",
-            url: "",
+            type: "POST",
+            url: "/photofamily/send.php",
             data: $(this).serialize()
         }).done(function () {
             $(parent).append('<p class="ajax-msg-tarrif">Спасибо, мы с Вами свяжемся!</p>');
