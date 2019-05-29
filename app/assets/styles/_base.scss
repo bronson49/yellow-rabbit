@@ -45,6 +45,7 @@ textarea { resize: none; }
 }
 .container-big {
   overflow-y: scroll;
+  -ms-overflow-style:scrollbar;
   &::-webkit-scrollbar-track  {
     border-radius: 10px;
     background-color: #F5F5F5;
