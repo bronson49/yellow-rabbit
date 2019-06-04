@@ -262,7 +262,7 @@ const onmapFunc = function () {
         let currPoi;
         let companyPoi = {lat: 50.444844, lng: 30.6340953}
         let locations = [
-            {coord: {lat: 50.3987803, lng: 30.6342189}, icon: 'assets/images/metro_poznyaki.png'},
+            {coord: {lat: 50.4094165, lng: 30.6051421}, icon: 'assets/images/metro_poznyaki.png'},
             {coord: {lat: 50.4598726, lng: 30.6281441}, icon: 'assets/images/metro_chernigov.png'},
             {coord: {lat: 50.4269691, lng: 30.5378012}, icon: 'assets/images/metro_goloseev.png'},
 
