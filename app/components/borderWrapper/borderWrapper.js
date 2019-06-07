@@ -151,7 +151,11 @@ const borderWrapperFunc = function () {
     // ajax
     const regExp = /\S+@\S+\.\S+/;
     $('.requestCall').submit(function () {
-       // console.log($(this).find('input').val().length);
+        //console.log($(this).find('input').val());
+        let _phone = $(this).find('input').val();
+        if (!_phone){
+            return false;
+        }
         $.ajax({
             type: "POST",
             url: "/photofamily/send.php",
@@ -166,8 +170,13 @@ const borderWrapperFunc = function () {
     });
     $('.appointment-form').submit(function () {
          let mailValid = $(this).find('#mail');
+         let _phone = $(this).find('#phone').val();
 
-         if (mailValid[0].value!=='' && !regExp.test(mailValid[0].value) ) {
+        if (!_phone){
+            return false;
+        }
+        console.log(regExp.test(mailValid[0].value));
+         if (mailValid[0].value ==='' && !regExp.test(mailValid[0].value) ) {
              $(mailValid).css({'border': '2px solid red'});
              return false;
          } else {

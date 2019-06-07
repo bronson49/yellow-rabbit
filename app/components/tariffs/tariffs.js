@@ -11,6 +11,11 @@ const tariffsFunc = function () {
 
     $('.order-tariff').submit(function () {
         let parent = $(this).closest('.tariffs-offers-item');
+        let _phone = $(this).find('input[name=phone]').val();
+
+        if (!_phone){
+            return false;
+        }
         $.ajax({
             type: "POST",
             url: "/photofamily/send.php",
