@@ -107,7 +107,7 @@
   }
   &-timer {
     position: absolute;
-    bottom: -45px;
+    bottom: -25px;
     left: 0;
     width: 100%;
    // background: #000000;
@@ -291,6 +291,14 @@
       right: -40px;
       top: -40px;
     }
+  }
+}
+@media (max-width: 1600px){
+  .offers-item-list ul li {
+    margin: 13px 0;
+  }
+  .offers-item-price span {
+    font-size: 45px;
   }
 }
 
